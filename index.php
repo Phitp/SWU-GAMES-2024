@@ -8,10 +8,10 @@
 <body>
   <div class="main">
     <div class="side-menu">
-
+      
     </div>
     <div class="info">
-      
+      Testing
     </div>
   </div>
     
