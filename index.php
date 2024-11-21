@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="sidebar">
+        <header>
+        <img src="https://unity.swu.ac.th/download/srinakharinwirot_logo_th_color/?wpdmdl=412&refresh=673eecd7637581732177111%22%3EDownload%3C/a%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%3C/div%3E%3C/div%3E%3C/div%3E">
         <h2>SWU GAMES 2024</h2>
+        </header>
         <ul>
-            <li>เข้าสู่ระบบ</li>
-            <li>ประกาศผลการแข่งขัน</li>
-            <li>บัตรประจำตัวนักกีฬา</li>
-            <li>วิธีการใช้งาน</li>
-            <li>ช่องทางการรับชม</li>
-            <li>ประมวลภาพ</li>
-            <li>สถิติการเข้าใช้งาน</li>
+            <li><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ <span><i class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน <span><i class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา <span><i class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน <span><i class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-video"></i> ช่องทางการรับชม <span><i class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-image"></i> ประมวลภาพ <span><i class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <span><i class="fa-solid fa-angle-left"></i></span></li>
         </ul>
     </div>
     <div class="content">
         <header>
-            <h1>การแข่งกีฬา-กรีฑานักเรียน ประจำปี 2567</h1>
-            <h2>ปรางค์คู่เกมส์ 2024</h2>
+            <button>HOME</button>
+            <h1>สำหรับ Admin</h1>
+            <button>สถานที่จัดแข่งกิจกรรม</button>
         </header>
         <div class="statistics">
             <div class="stat-item">
