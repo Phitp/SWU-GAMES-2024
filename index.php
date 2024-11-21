@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ปรางค์คู่เกมส์ 2024</title>
+    <title>SWU GAMES 2024</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="sidebar">
-        <h2>ปรางค์คู่เกมส์ 2024</h2>
+        <h2>SWU GAMES 2024</h2>
         <ul>
-            <li>ตรวจสอบข้อมูล</li>
-            <li>ประกาศผลการแข่งขัน</li>
-            <li>พิมพ์เกียรติบัตร</li>
-            <li>เอกสารประกอบการแข่ง</li>
-            <li>ประมวลภาพกิจกรรม</li>
-            <li>คอมแบบสอบถาม</li>
-            <li>VDO แนะนำการใช้งาน</li>
             <li>เข้าสู่ระบบ</li>
+            <li>ประกาศผลการแข่งขัน</li>
+            <li>บัตรประจำตัวนักกีฬา</li>
+            <li>วิธีการใช้งาน</li>
+            <li>ช่องทางการรับชม</li>
+            <li>ประมวลภาพ</li>
             <li>สถิติการเข้าใช้งาน</li>
         </ul>
     </div>
