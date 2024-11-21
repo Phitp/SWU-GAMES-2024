@@ -70,15 +70,15 @@
             </div>
         </div>
         <div class="match-list">
-            <h3>รายการคู่แข่งขัน</h3>
+            <h3 class="match">รายการคู่แข่งขัน</h3>
             <div class="slider">
                 <div class="slides">
                     <img src="https://via.placeholder.com/600x300?text=Image+1" alt="Image 1">
                     <img src="https://via.placeholder.com/600x300?text=Image+2" alt="Image 2">
                     <img src="https://via.placeholder.com/600x300?text=Image+3" alt="Image 3">
                 </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
             </div>
             <div class="dots">
                 <span class="dot active" data-slide="0"></span>
