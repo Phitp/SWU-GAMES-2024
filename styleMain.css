@@ -23,7 +23,7 @@ body {
   display: flex;
   width: 234px;
   height: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 13px 8px;
   border-bottom: 1px solid #000000;
@@ -54,12 +54,11 @@ body {
   font-weight: bold;
   cursor: pointer;
   align-items: center;
-  justify-content: space-between;
 }
 
 .sidebar ul li i {
-  font-size: 18px;
-  margin-right: 3px;
+  font-size: 20px;
+  margin-right: 5px;
   cursor: pointer;
 }
 

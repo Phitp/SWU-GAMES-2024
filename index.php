@@ -17,26 +17,20 @@
             <h2>SWU GAMES 2024</h2>
         </header>
         <ul>
-            <li><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ <span><i
-                        class="fa-solid fa-angle-left"></i></span></li>
-            <li><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน <span><i
-                        class="fa-solid fa-angle-left"></i></span></li>
-            <li><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา <span><i
-                        class="fa-solid fa-angle-left"></i></span></li>
-            <li><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน <span><i
-                        class="fa-solid fa-angle-left"></i></span></li>
-            <li><i class="fa-solid fa-video"></i> ช่องทางการรับชม <span><i class="fa-solid fa-angle-left"></i></span>
-            </li>
-            <li><i class="fa-solid fa-image"></i> ประมวลภาพ <span><i class="fa-solid fa-angle-left"></i></span></li>
-            <li><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <span><i
-                        class="fa-solid fa-angle-left"></i></span></li>
+            <li><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</li>
+            <li><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
+            <li><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
+            <li><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
+            <li><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
+            <li><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
+            <li><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน</li>
         </ul>
     </div>
     <div class="content">
         <header>
             <i class="fa-solid fa-bars"></i>
             <button class="btn-home">HOME</button>
-            <h1 id="account">สำหรับ Admin</h1> <!-- สำหรับ Admin -->
+            <h1 id="account"></h1> <!-- สวัสดีคุณ ........  -->
             <button class="btn-map"><i class="fa-solid fa-map-location-dot"></i> สถานที่จัดแข่งกิจกรรม</button>
         </header>
         <div class="statistics">
