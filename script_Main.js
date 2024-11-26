@@ -9,12 +9,14 @@ function hideAndShow() {
     statUserToday.style.display = "block";
     arrowicon.classList.remove("fa-angle-left");
     arrowicon.classList.add("fa-angle-down");
+    statuser.classList.add("satatuseractive");
     display = 0;
   } 
   else {
     statUserToday.style.display = "none";
     arrowicon.classList.add("fa-angle-left");
     arrowicon.classList.remove("fa-angle-down");
+    statuser.classList.remove("satatuseractive");
     display = 1;
   }
   console.log("hello");

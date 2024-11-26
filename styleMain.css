@@ -62,7 +62,7 @@ body {
   cursor: pointer;
 }
 
-.icon-sidebar:hover, .stat-user:hover {
+.icon-sidebar:hover, .stat-user:hover, .satatuseractive {
   background-color: #A40001;
   border-radius: 5px;
   padding-left: 10px;
