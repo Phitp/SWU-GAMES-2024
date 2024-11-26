@@ -156,6 +156,10 @@ header i {
   margin-left: 15px;
 }
 
+.match_score {
+  display: flex;
+}
+
 /* คู่แข่งขันสไลด์ */
 
 .match-list {
@@ -205,7 +209,7 @@ header i {
 /* Navigation buttons */
 .prev,
 .next {
-  position: fixed;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -214,15 +218,6 @@ header i {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 50%;
-}
-
-
-.prev {
-  left: 300px;
-}
-
-.next {
-  right: 980px;
 }
 
 /* Dots */
@@ -243,6 +238,72 @@ header i {
 
 .active {
   background-color: #A40001;
+}
+
+/* score table */
+.score-list {
+  margin-top: 20px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #00aaff;
+  color: white;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  background-color: #00aaff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0077cc;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 /* stye responsive */

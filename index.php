@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -69,26 +69,63 @@
                 </div>
             </div>
         </div>
-        <div class="match-list">
-            <h3 class="match">รายการคู่แข่งขัน</h3>
-            <div class="slider">
-                <div class="slides">
-                    <img src="https://via.placeholder.com/600x300?text=Image+1" alt="Image 1">
-                    <img src="https://via.placeholder.com/600x300?text=Image+2" alt="Image 2">
-                    <img src="https://via.placeholder.com/600x300?text=Image+3" alt="Image 3">
-                </div>
+        <div class="match_score">
+            <div class="match-list">
+                <h3 class="match">รายการคู่แข่งขัน</h3>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="https://via.placeholder.com/600x300?text=Image+1" alt="Image 1">
+                        <img src="https://via.placeholder.com/600x300?text=Image+2" alt="Image 2">
+                        <img src="https://via.placeholder.com/600x300?text=Image+3" alt="Image 3">
+                    </div>
                     <button class="prev">&#10094;</button>
                     <button class="next">&#10095;</button>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
             </div>
-            <div class="dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
+
+            <div class="score-list">
+                <div class="container">
+                    <h1>สรุปเหรียญรางวัล</h1>
+                    <div class="table-controls">
+                        <label for="entries">Show
+                            <select id="entries">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                            </select> entries
+                        </label>
+                        <input type="text" id="search" placeholder="Search">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>อันดับ</th>
+                                <th>คณะ/วิทยาลัย</th>
+                                <th>🥇 เหรียญทอง</th>
+                                <th>🥈 เหรียญเงิน</th>
+                                <th>🥉 เหรียญทองแดง</th>
+                                <th>🏆 รวม</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Rows will be dynamically populated -->
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <button id="prev-page">Previous</button>
+                        <span id="current-page">1</span>
+                        <button id="next-page">Next</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+        <script src="scripts.js"></script>
 </body>
 
 </html>
