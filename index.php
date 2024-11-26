@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleMain.css">
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -48,16 +48,16 @@
                 </div>
             </div>
             <div class="stat-item">
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-school"></i>
                 <div class="info">
-                    <p>จำนวนนักกีฬา</p>
-                    <h3>000 คน</h3>
+                    <p>คณะ/วิทยาลัย</p>
+                    <h3>18 --</h3>
                 </div>
             </div>
             <div class="stat-item">
-                <i class="fa-solid fa-question"></i>
+                <i class="fa-solid fa-user"></i>
                 <div class="info">
-                    <p>จำนวน_____</p>
+                    <p>จำนวนนักกีฬา</p>
                     <h3>000 คน</h3>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="score-list">
                 <div class="container">
                     <h1>สรุปเหรียญรางวัล</h1>
-                    <div class="table-controls">
+                    <!-- <div class="table-controls">
                         <label for="entries">Show
                             <select id="entries">
                                 <option value="10">10</option>
@@ -100,7 +100,7 @@
                             </select> entries
                         </label>
                         <input type="text" id="search" placeholder="Search">
-                    </div>
+                    </div> -->
                     <table>
                         <thead>
                             <tr>
@@ -116,16 +116,23 @@
                             <!-- Rows will be dynamically populated -->
                         </tbody>
                     </table>
-                    <div class="pagination">
+                    <!-- <div class="pagination"> 
                         <button id="prev-page">Previous</button>
                         <span id="current-page">1</span>
                         <button id="next-page">Next</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
-        <script src="scripts.js"></script>
+        <div class="sponsor-container">
+            <h1> <i class="fa-solid fa-hand-holding-heart"></i> สนับสนุนโดย</h1>
+            <div class="sponsor-grid" id="sponsor-grid">
+                <!-- Images will be dynamically added here -->
+            </div>
+        </div>
+
+        <script src="script_Main.js"></script>
 </body>
 
 </html>

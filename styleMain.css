@@ -13,6 +13,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
+  height: 1350px;
   background-color: #ADADAD;
   color: #000000;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
@@ -186,7 +187,6 @@ header i {
   position: left;
   width: 600px;
   height: 400px;
-  max-width: 600px;
   overflow: hidden;
   margin: auto;
   border: 2px solid #ccc;
@@ -243,12 +243,13 @@ header i {
 /* score table */
 .score-list {
   margin-top: 20px;
+  margin-right: auto;
 }
 
 .container {
   width: 880px;
   margin: 0 auto;
-  background: #fff;
+  background: #514F4F;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -256,6 +257,7 @@ header i {
 
 .container h1 {
   text-align: center;
+  color: #fff;
   margin-top: 3px;
 }
 
@@ -269,6 +271,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 table th, table td {
@@ -278,11 +281,11 @@ table th, table td {
 }
 
 table th {
-  background-color: #00aaff;
+  background-color: #D9AC75;
   color: white;
 }
 
-.pagination {
+/* .pagination {
   text-align: center;
 }
 
@@ -290,7 +293,7 @@ table th {
   padding: 5px 10px;
   margin: 5px;
   border: none;
-  background-color: #00aaff;
+  background-color: #D9AC75;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -298,12 +301,48 @@ table th {
 
 .pagination button:hover {
   background-color: #0077cc;
-}
+} */
 
-input[type="text"] {
+/* input[type="text"] {
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 4px;
+} */
+
+.sponsor-container {
+  text-align: center;
+}
+
+.sponsor-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sponsor-item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sponsor-item img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* stye responsive */
