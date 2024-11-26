@@ -1,3 +1,27 @@
+// การเคลื่อนไหวสถิติการใช้งาน
+var statUserToday = document.getElementById('todayUser');
+var statuser = document.getElementById('statUser');
+var arrowicon = document.getElementById('arrowIcon');
+var display = 1;
+
+function hideAndShow() {
+  if(display == 1) {
+    statUserToday.style.display = "block";
+    arrowicon.classList.remove("fa-angle-left");
+    arrowicon.classList.add("fa-angle-down");
+    display = 0;
+  } 
+  else {
+    statUserToday.style.display = "none";
+    arrowicon.classList.add("fa-angle-left");
+    arrowicon.classList.remove("fa-angle-down");
+    display = 1;
+  }
+  console.log("hello");
+}
+
+statuser.addEventListener("click", hideAndShow);
+
 // slide match
 const slides = document.querySelector('.slides');
 const images = document.querySelectorAll('.slides img');

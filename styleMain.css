@@ -62,17 +62,31 @@ body {
   cursor: pointer;
 }
 
-.sidebar ul li span {
-  margin-left: auto;
-}
-
-.sidebar ul li:hover {
+.icon-sidebar:hover, .stat-user:hover {
   background-color: #A40001;
   border-radius: 5px;
   padding-left: 10px;
   color: white;
 }
 
+.stat-user .arrow {
+  margin-left: auto;
+}
+
+.today-user {
+  width: 210px;
+  height: auto;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 16px;
+  padding-top: 0;
+  margin-top: -6px;
+  display: none;
+}
+
+.today-user p {
+  margin-left: 25px;
+}
 /* Content */
 
 .content {
