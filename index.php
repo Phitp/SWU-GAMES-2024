@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
-    <link rel="stylesheet" href="styleMain.css">
+    <link rel="stylesheet" href="style_Main.css">
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,12 +17,12 @@
             <h2>SWU GAMES 2024</h2>
         </header>
         <ul>
-            <li class="icon-sidebar"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</li>
-            <li class="icon-sidebar"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
-            <li class="icon-sidebar"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
-            <li class="icon-sidebar"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
-            <li class="icon-sidebar"><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
-            <li class="icon-sidebar"><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
+            <li class="icon-sidebar" id="btnLogIn"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</li>
+            <li class="icon-sidebar" id="btnAnnounce"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
+            <li class="icon-sidebar" id="btnCard"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
+            <li class="icon-sidebar" id="btnHelp"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
+            <li class="icon-sidebar" id="btnLive"><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
+            <li class="icon-sidebar" id="btnPicture"><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
             <li class="stat-user" id="statUser"><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <i class="fa-solid fa-angle-left arrow" id="arrowIcon"></i></li>
             <div class="today-user" id="todayUser">
                 <p><i class="fa-solid fa-network-wired"></i> วันนี้ : 0000 คน</p>
@@ -34,10 +34,9 @@
     </div>
     <div class="content">
         <header>
-            <i class="fa-solid fa-bars"></i>
-            <button class="btn-home">HOME</button>
+            <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
             <h1 id="account"></h1> <!-- สวัสดีคุณ ........  -->
-            <button class="btn-map"><i class="fa-solid fa-map-location-dot"></i> สถานที่จัดแข่งกิจกรรม</button>
+            <button class="btn-map" id="btnMap"><i class="fa-solid fa-map-location-dot"></i> สถานที่จัดแข่งกิจกรรม</button>
         </header>
         <div class="statistics">
             <div class="stat-item sport">
@@ -132,7 +131,8 @@
             </div>
         </div>
 
-        <script src="script_Main.js"></script>
+        <script src="scriptMain.js"></script>
+        <script src="link_page.js"></script>
 </body>
 
 </html>
