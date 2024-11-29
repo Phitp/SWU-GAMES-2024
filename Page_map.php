@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>สถานที่จัดแข่งกิจกรรม</title>
     <link rel="stylesheet" href="style_LinkPages.css">
-    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -47,6 +46,7 @@
         </div>
     </div>
 
+    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
     <!-- <script src="scriptMain.js"></script> -->
     <script src="linkPages.js"></script>
 </body>

@@ -7,7 +7,6 @@
     <title>เข้าสู่ระบบ</title>
     <link rel="stylesheet" href="style_LinkPages.css">
     <link rel="stylesheet" href="./style/style_Login.css">
-    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -69,6 +68,7 @@
         </div>
     </div>
 
+    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
     <script src="./script/scriptLogin.js"></script>
     <script src="linkPages.js"></script>
 </body>

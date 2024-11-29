@@ -339,47 +339,12 @@ nav h1 {
   margin-top: 3px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-  color: #fff;
+.score-table {
+  background-color: chartreuse;
+  width: 800px;
+  height: 680px;
+  padding: 20px;
 }
-
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-table th {
-  background-color: #D9AC75;
-  color: white;
-}
-
-/* .pagination {
-  text-align: center;
-}
-
-.pagination button {
-  padding: 5px 10px;
-  margin: 5px;
-  border: none;
-  background-color: #D9AC75;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.pagination button:hover {
-  background-color: #0077cc;
-} */
-
-/* input[type="text"] {
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-} */
 
 /* sponser */
 .sponsor-container {

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
     <link rel="stylesheet" href="style_Main.css">
-    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -109,6 +108,9 @@
                 <div class="hero-right">
                     <div class="container">
                         <h1>สรุปคะแนน วันที่ 00/00/0000</h1>
+                        <div class="score-table">
+                            .
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,6 +125,7 @@
         </div>
     </div>
     
+    <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
     <script src="scriptMain.js"></script>
     <script src="linkPages.js"></script>
 </body>
