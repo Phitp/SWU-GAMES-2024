@@ -47,7 +47,7 @@
                     <i class="fa-solid fa-person-running"></i>
                     <div class="info">
                         <p>จำนวนกีฬา</p>
-                        <h3>21 ประเภท</h3>
+                        <h3>22 ประเภท</h3>
                     </div>
                 </div>
                 <div class="stat-item">
@@ -109,7 +109,50 @@
                     <div class="container">
                         <h1>สรุปคะแนน วันที่ 00/00/0000</h1>
                         <div class="score-table">
-                            .
+                            <div class="results">
+                                <h3>กีฬาฟุตซอล (ประเภททีมชาย) สาย A</h3>
+                                <div class="set-score">
+                                    <div class="set">
+                                        <h2>set 1</h2>
+                                        <div class="pair">
+                                            <p>SC</p>
+                                            <div class="team" id="team1">.</div>
+                                            <div class="score">
+                                                <p><span id="score-team1" class="score1">00</span> - <span
+                                                        id="score-team2" class="score2">00</span></p>
+                                            </div>
+                                            <div class="team" id="team2">.</div>
+                                            <p>IC</p>
+                                        </div>
+                                    </div>
+                                    <div class="set">
+                                        <h2>set 1</h2>
+                                        <div class="pair">
+                                            <p>SC</p>
+                                            <div class="team" id="team1">.</div>
+                                            <div class="score">
+                                                <p><span id="score-team1" class="score1">00</span> - <span
+                                                        id="score-team2" class="score2">00</span></p>
+                                            </div>
+                                            <div class="team" id="team2">.</div>
+                                            <p>IC</p>
+                                        </div>
+                                    </div>
+                                    <div class="set">
+                                        <h2>set 1</h2>
+                                        <div class="pair">
+                                            <p>SC</p>
+                                            <div class="team" id="team1">.</div>
+                                            <div class="score">
+                                                <p><span id="score-team1" class="score1">00</span> - <span
+                                                        id="score-team2" class="score2">00</span></p>
+                                            </div>
+                                            <div class="team" id="team2">.</div>
+                                            <p>IC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +167,7 @@
 
         </div>
     </div>
-    
+
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
     <script src="scriptMain.js"></script>
     <script src="linkPages.js"></script>

@@ -323,6 +323,7 @@ nav h1 {
   background-color: #A40001;
 }
 
+/* สรุปคะแนน */
 .container {
   width: 860px;
   height: 730px;
@@ -336,14 +337,92 @@ nav h1 {
 .container h1 {
   text-align: center;
   color: #fff;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 
 .score-table {
-  background-color: chartreuse;
-  width: 800px;
-  height: 680px;
-  padding: 20px;
+  /* background-color: rgb(78, 156, 1); */
+  width: 820px;
+  height: 625px;
+  padding: 10px;
+  padding-top: 0;
+  margin: 10px;
+  overflow-y: auto;
+}
+
+.score-table::-webkit-scrollbar {
+  width: 8px;
+}
+
+.score-table::-webkit-scrollbar-thumb {
+  background: rgb(190, 190, 190); 
+  border-radius: 10px;
+}
+
+.score-table::-webkit-scrollbar-thumb:hover {
+  background: rgb(168, 168, 168); 
+  border-radius: 10px;
+}
+
+.results {
+  background-color: rgb(255, 255, 255);
+  width: 780px;
+  height: auto;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.results h3 {
+  font-size: 21px;
+  text-align: center;
+}
+
+.set-score {
+  /* background-color: aquamarine; */
+  padding: 0;
+}
+
+.set {
+  /* background-color: blue; */
+  padding: 5px;
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+
+.set h2 {
+  margin-bottom: 5px;
+}
+
+.pair {
+  /* background-color: coral; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+.team {
+  border: 2px solid #000000;
+  width: 50px;
+  height: 50px;
+}
+
+.score1 {
+  margin-right: 20px;
+}
+
+.score2 {
+  margin-left: 20px;
+}
+
+.score p {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* sponser */
