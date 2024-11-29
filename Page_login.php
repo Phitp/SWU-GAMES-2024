@@ -44,30 +44,32 @@
         </nav>
 
         <div class="content">
-            <div class="login-container">
-                <h1>เข้าสู่ระบบ</h1>
-                <form id="login-form">
-                    <div class="input-group">
-                        <label for="name">Name</label>
-                        <div class="input-wrapper">
-                            <input type="text" id="name" name="name" placeholder="Enter your name">
-                            <span class="icon user-icon"></span>
+            <div class="login-style">
+                <div class="login-container">
+                    <h1>เข้าสู่ระบบ</h1>
+                    <form id="login-form">
+                        <div class="input-group">
+                            <label for="name" id="IDstd">รหัสนิสิต 13 หลัก</label>
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="เช่น: 67xxxxxxxxxxx">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="password">Password</label>
-                        <div class="input-wrapper">
-                            <input type="password" id="password" name="password" placeholder="Enter your password">
-                            <span class="icon lock-icon"></span>
+                        <div class="input-group">
+                            <label for="password">รหัสผ่าน</label>
+                            <div class="input-wrapper password">
+                                <input type="password" placeholder="กรอกรหัสผ่านของคุณ" id="Password">
+                                <i class="fa-regular fa-eye-slash eye" id="eyeIcon"></i>
+                            </div>
                         </div>
-                    </div>
-                    <button class="loginBtn">เข้าสู่ระบบ</button>
-                </form>
+                        <button class="loginBtn">เข้าสู่ระบบ</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- <script src="scriptMain.js"></script> -->
+    <script src="./script/scriptLogin.js"></script>
     <script src="linkPages.js"></script>
 </body>
 
