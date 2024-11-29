@@ -124,7 +124,7 @@
     </div>
 
     <script src="scriptMain.js"></script>
-    <script src="link_page.js"></script>
+    <script src="./pages/linkPages.js"></script>
 </body>
 
 </html>
