@@ -14,7 +14,7 @@
     <div class="sidebar">
         <header>
             <img
-                src="https://unity.swu.ac.th/download/srinakharinwirot_logo_th_color/?wpdmdl=412&refresh=673eecd7637581732177111%22%3EDownload%3C/a%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%20%20%20%20%3C/div%3E%20%20%20%20%3C/div%3E%3C/div%3E%3C/div%3E">
+                src="./picture/logoSWU/Srinakharinwirot.png">
             <h2>SWU GAMES 2024</h2>
         </header>
         <ul>
