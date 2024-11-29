@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>เข้าสู่ระบบ</title>
     <link rel="stylesheet" href="style_LinkPages.css">
+    <link rel="stylesheet" href="./style/style_Login.css">
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -43,7 +44,26 @@
         </nav>
 
         <div class="content">
-            
+            <div class="login-container">
+                <h1>เข้าสู่ระบบ</h1>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            <span class="icon user-icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                            <span class="icon lock-icon"></span>
+                        </div>
+                    </div>
+                    <button class="loginBtn">เข้าสู่ระบบ</button>
+                </form>
+            </div>
         </div>
     </div>
 
