@@ -5,18 +5,24 @@ body {
   margin: 0;
   font-family: Sarabun, sans-serif;
   box-sizing: border-box;
-  display: flex;
   height: 100vh;
   background-color: #f2f2f2;
+}
+
+.homepage {
+  width: 1600px;
+  height: 1200px;
 }
 
 /* Sidebar */
 .sidebar {
   width: 250px;
-  height: 1350px;
+  height: 1348px;
   background-color: #ADADAD;
   color: #000000;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 1;
 }
 
 .sidebar header {
@@ -91,18 +97,18 @@ body {
 .today-user p {
   margin-left: 25px;
 }
-/* Content */
 
-.content-nav {
-  flex: 1;
-  padding: 0;
-}
-
+/* navbar */
 nav {
   display: flex;
+  width: 1600px;
   height: 56px;
   align-items: center;
   border-bottom: 2px solid #000000;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  margin-left: 250px;
+  position: relative;
+  z-index: 0;
 }
 
 .btn-home,
@@ -133,6 +139,19 @@ nav h1 {
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: 30px;
+}
+
+/* Content */
+.content {
+  width: 1600px;
+  height: 1200px;
+  margin-left: 250px;
+  padding-bottom: 85px;
+  padding-top: 5px;
+  background: url("./picture/coverweb/test2023.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .statistics {
@@ -369,6 +388,7 @@ table th {
 
 .sponsor-container h1 {
   font-size: 24px;
+  color: #fff;
   margin-bottom: 20px;
   margin-left: 20px;
   text-align: left;

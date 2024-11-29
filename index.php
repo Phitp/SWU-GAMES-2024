@@ -11,31 +11,29 @@
 
 <body>
 
-    <div class="sidebar">
-        <header>
-            <img
-                src="./picture/logoSWU/Srinakharinwirot.png">
-            <h2>SWU GAMES 2024</h2>
-        </header>
-        <ul>
-            <li class="icon-sidebar" id="btnLogIn"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</li>
-            <li class="icon-sidebar" id="btnAnnounce"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
-            <li class="icon-sidebar" id="btnCard"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
-            <li class="icon-sidebar" id="btnHelp"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
-            <li class="icon-sidebar" id="btnLive"><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
-            <li class="icon-sidebar" id="btnPicture"><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
-            <li class="stat-user" id="statUser"><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <i
-                    class="fa-solid fa-angle-left arrow" id="arrowIcon"></i></li>
-            <div class="today-user" id="todayUser">
-                <p><i class="fa-solid fa-network-wired"></i> วันนี้ : 0000 คน</p>
-                <p><i class="fa-solid fa-network-wired"></i> เมื่อวานนี้ : 0000 คน</p>
-                <p><i class="fa-solid fa-network-wired"></i> เดือนนี้ : 0000 คน</p>
-                <p><i class="fa-solid fa-network-wired"></i> ทั้งหมด : 0000 คน</p>
-            </div>
-        </ul>
-    </div>
-
-    <div class="content-nav">
+    <div class="homepage">
+        <div class="sidebar">
+            <header>
+                <img src="./picture/logoSWU/Srinakharinwirot.png">
+                <h2>SWU GAMES 2024</h2>
+            </header>
+            <ul>
+                <li class="icon-sidebar" id="btnLogIn"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</li>
+                <li class="icon-sidebar" id="btnAnnounce"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
+                <li class="icon-sidebar" id="btnCard"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
+                <li class="icon-sidebar" id="btnHelp"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
+                <li class="icon-sidebar" id="btnLive"><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
+                <li class="icon-sidebar" id="btnPicture"><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
+                <li class="stat-user" id="statUser"><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <i
+                        class="fa-solid fa-angle-left arrow" id="arrowIcon"></i></li>
+                <div class="today-user" id="todayUser">
+                    <p><i class="fa-solid fa-network-wired"></i> วันนี้ : 0000 คน</p>
+                    <p><i class="fa-solid fa-network-wired"></i> เมื่อวานนี้ : 0000 คน</p>
+                    <p><i class="fa-solid fa-network-wired"></i> เดือนนี้ : 0000 คน</p>
+                    <p><i class="fa-solid fa-network-wired"></i> ทั้งหมด : 0000 คน</p>
+                </div>
+            </ul>
+        </div>
 
         <nav>
             <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
@@ -45,7 +43,6 @@
         </nav>
 
         <div class="content">
-
             <div class="statistics">
                 <div class="stat-item sport">
                     <i class="fa-solid fa-person-running"></i>
@@ -83,9 +80,9 @@
                         <h3><i class="fa-solid fa-bullhorn"></i> ประกาศสำคัญ</h3>
                         <div class="posts" id="postsUpdate">
                             <!-- <div class="post">
-                                วันที 00/00/0000 (new)<br>
-                                เนื้อหา:........................ <a href="">ลิ้ง</a>
-                            </div> -->
+                    วันที 00/00/0000 (new)<br>
+                    เนื้อหา:........................ <a href="">ลิ้ง</a>
+                </div> -->
                         </div>
                     </div>
 
@@ -124,8 +121,8 @@
             </div>
 
         </div>
-
     </div>
+
     <script src="scriptMain.js"></script>
     <script src="link_page.js"></script>
 </body>
