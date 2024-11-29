@@ -26,7 +26,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 13px 8px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
   cursor: pointer;
 }
 
@@ -93,16 +93,16 @@ body {
 }
 /* Content */
 
-.content {
+.content-nav {
   flex: 1;
   padding: 0;
 }
 
-.content header {
+nav {
   display: flex;
   height: 56px;
   align-items: center;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .btn-home,
@@ -121,7 +121,7 @@ body {
   padding: auto;
 }
 
-.content header h1 {
+nav h1 {
   font-size: 24px;
   color: #000000;
 }
@@ -176,21 +176,70 @@ body {
   display: flex;
 }
 
-/* คู่แข่งขันสไลด์ */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
 
-.match-list {
+/* ประกาศสำคัญ */
+.information {
   background-color: #514F4F;
   width: 600px;
-  height: 470px;
-  margin: 20px;
+  height: 200px;
   padding: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.match {
+.information h3 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.posts {
+  overflow-y: auto;
+  height: 180px;
+}
+
+.posts::-webkit-scrollbar {
+  width: 8px;
+}
+
+.posts::-webkit-scrollbar-thumb {
+  background: rgb(190, 190, 190); 
+  border-radius: 10px;
+}
+
+.posts::-webkit-scrollbar-thumb:hover {
+  background: rgb(168, 168, 168); 
+  border-radius: 10px;
+}
+
+.post {
+  background-color: #fff;
+  width: 96%;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* คู่แข่งขันสไลด์ */
+.match-list {
+  background-color: #514F4F;
+  width: 600px;
+  height: 470px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.match-list h3 {
   font-size: 28px;
   margin-bottom: 10px;
   margin-top: -10px;
@@ -222,7 +271,7 @@ body {
 }
 
 /* Navigation buttons */
-.prev,
+/* .prev,
 .next {
   position: relative;
   top: 50%;
@@ -233,7 +282,7 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 50%;
-}
+} */
 
 /* Dots */
 .dots {
@@ -255,17 +304,12 @@ body {
   background-color: #A40001;
 }
 
-/* score table */
-.score-list {
-  margin-top: 20px;
-  margin-right: auto;
-}
-
 .container {
-  width: 880px;
-  margin: 0 auto;
+  width: 860px;
+  height: 730px;
   background: #514F4F;
   padding: 20px;
+  margin: 20px 20px 0 0;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -274,12 +318,6 @@ body {
   text-align: center;
   color: #fff;
   margin-top: 3px;
-}
-
-.table-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 table {
@@ -324,6 +362,7 @@ table th {
   border-radius: 4px;
 } */
 
+/* sponser */
 .sponsor-container {
   text-align: center;
 }
