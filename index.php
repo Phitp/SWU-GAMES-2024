@@ -110,8 +110,9 @@
                         <h1>สรุปคะแนน วันที่ 00/00/0000</h1>
                         <div class="score-table">
                             <div class="results">
-                                <h3>กีฬาฟุตซอล (ประเภททีมชาย) สาย A</h3>
+                                <h3 class="sportname">กีฬาฟุตซอล (ประเภททีมชาย)</h3>
                                 <div class="set-score">
+                                    <h3 id="gropVs" class="group">สาย A คู่ SC vs IC</h3>
                                     <div class="set">
                                         <h2>set 1</h2>
                                         <div class="pair">
