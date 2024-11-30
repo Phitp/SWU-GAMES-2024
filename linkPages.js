@@ -51,6 +51,7 @@ announce.addEventListener("click", function() {
 card.addEventListener("click", function() {
   // window.location.assign('Page_card.php');
   alert("กรุณาเข้าสู่ระบบเพื่อดูข้อมูล");
+  console.log("hello");
 });
 
 // help.addEventListener("click", function() {
