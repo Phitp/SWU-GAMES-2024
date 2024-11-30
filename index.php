@@ -107,48 +107,48 @@
 
                 <div class="hero-right">
                     <div class="container">
-                        <h1>สรุปคะแนน วันที่ 00/00/0000</h1>
+                        <h1 id="date">สรุปคะแนน วันที่ 00/00/0000</h1>
                         <div class="score-table">
                             <div class="results">
                                 <h3 class="sportname">กีฬาฟุตซอล (ประเภททีมชาย)</h3>
                                 <div class="set-score">
                                     <h3 id="gropVs" class="group">สาย A คู่ SC vs IC</h3>
                                     <div class="set">
-                                        <h2>set 1</h2>
+                                        <h2 id="set1">set 1</h2>
                                         <div class="pair">
                                             <p>SC</p>
-                                            <div class="team" id="team1">.</div>
+                                            <div class="team" id="team1"></div>
                                             <div class="score">
                                                 <p><span id="score-team1" class="score1">00</span> - <span
                                                         id="score-team2" class="score2">00</span></p>
                                             </div>
-                                            <div class="team" id="team2">.</div>
+                                            <div class="team" id="team2"></div>
                                             <p>IC</p>
                                         </div>
                                     </div>
                                     <div class="set">
-                                        <h2>set 1</h2>
+                                        <h2 id="set2">set 2</h2>
                                         <div class="pair">
                                             <p>SC</p>
-                                            <div class="team" id="team1">.</div>
+                                            <div class="team" id="team1"></div>
                                             <div class="score">
                                                 <p><span id="score-team1" class="score1">00</span> - <span
                                                         id="score-team2" class="score2">00</span></p>
                                             </div>
-                                            <div class="team" id="team2">.</div>
+                                            <div class="team" id="team2"></div>
                                             <p>IC</p>
                                         </div>
                                     </div>
                                     <div class="set">
-                                        <h2>set 1</h2>
+                                        <h2 id="set3">set 3</h2>
                                         <div class="pair">
                                             <p>SC</p>
-                                            <div class="team" id="team1">.</div>
+                                            <div class="team" id="team1"></div>
                                             <div class="score">
                                                 <p><span id="score-team1" class="score1">00</span> - <span
                                                         id="score-team2" class="score2">00</span></p>
                                             </div>
-                                            <div class="team" id="team2">.</div>
+                                            <div class="team" id="team2"></div>
                                             <p>IC</p>
                                         </div>
                                     </div>

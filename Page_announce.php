@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ประกาศผลการแข่งขัน</title>
     <link rel="stylesheet" href="style_LinkPages.css">
+    <link rel="stylesheet" href="./style/style_Announce.css">
 </head>
 
 <body>
@@ -42,7 +43,44 @@
         </nav>
 
         <div class="content">
-            
+            <div class="container">
+                <h2>กีฬาประเภทชาย</h2>
+                <div class="btnscore">
+                    <button>กีฬาฟุตซอล</button>
+                    <button>กีฬาบาสเกตบอล</button>
+                    <button>กีฬาวอลเลย์บอล</button>
+                    <button>กีฬาแบดมินตัน</button>
+                    <button>กีฬากรีฑา 100 เมตร</button>
+                    <button>กีฬากรีฑา 200 เมตร</button>
+                    <button>กีฬากรีฑา 400 เมตร</button>
+                </div>
+                <h2>กีฬาประเภทหญิง</h2>
+                <div class="btnscore">
+                    <button>กีฬาแชร์บอล</button>
+                    <button>กีฬาบาสเกตบอล</button>
+                    <button>กีฬาวอลเลย์บอล</button>
+                    <button>กีฬาแบดมินตัน</button>
+                    <button>กีฬากรีฑา 100 เมตร</button>
+                    <button>กีฬากรีฑา 200 เมตร</button>
+                    <button>กีฬากรีฑา 400 เมตร</button>
+                </div>
+                <h2>กีฬาประเภทผสม</h2>
+                <div class="btnscore">
+                    <button>กีฬาแบดมินตัน</button>
+                    <button> กีฬา A &ndash; MATH</button>
+                    <button>กีฬา CROSSWORD</button>
+                    <button>กีฬาหมากฮอสไทย</button>
+                    <button>กีฬา E &ndash; SPORT ROV</button>
+                    <button>E &ndash; SPORT VALORANT</button>
+                    <button>กีฬากรีฑา ผลัดผสม 4x100 เมตร</button>
+                    <!-- <button>กีฬากรีฑา ผลัดผสม 4x100 เมตร</button> -->
+                </div>
+                <div class="line"></div>
+                <div class="committee">
+                    <h2>สำหรับกรรมการ</h2>
+                    <button>กรอกคะแนน</button>
+                </div>
+            </div>
         </div>
     </div>
 
