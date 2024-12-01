@@ -7,6 +7,7 @@
     <title>บัตรประจำตัวนักกีฬา</title>
     <link rel="stylesheet" href="style_LinkPages.css">
     <link rel="stylesheet" href="./style/style_CardForSport.css">
+    
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
         <div class="content">
             <div class="container">
-
+                .
             </div>
         </div>
     </div>

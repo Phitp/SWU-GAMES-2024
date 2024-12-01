@@ -54,7 +54,7 @@
                     <i class="fa-solid fa-school"></i>
                     <div class="info">
                         <p>คณะ/วิทยาลัย</p>
-                        <h3>18 --</h3>
+                        <h3>20 --</h3>
                     </div>
                 </div>
                 <div class="stat-item">
