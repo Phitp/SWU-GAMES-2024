@@ -7,8 +7,6 @@
     <title>SWU GAMES 2024</title>
     <link rel="stylesheet" href="style_Main.css">
     <link rel="stylesheet" href="./ModalPage/modalstyle.css">
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -52,7 +50,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <iframe src="sample.pdf" id="pdfViewer" class="pdf-frame"></iframe>
+                            <iframe src="./ModalPage/pdf/test.pdf" id="pdfViewer" class="pdf-frame"></iframe>
                         </div>
                     </div>
                 </div>
