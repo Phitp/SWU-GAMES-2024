@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>สถานที่จัดแข่งกิจกรรม</title>
     <link rel="stylesheet" href="style_LinkPages.css">
+    <style>
+        .content {
+            background: src('./picture/cover/Maptest01.png');
+        }
+    </style>
 </head>
 
 <body>

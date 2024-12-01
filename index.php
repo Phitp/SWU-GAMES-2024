@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
     <link rel="stylesheet" href="style_Main.css">
+    <link rel="stylesheet" href="./ModalPage/modalstyle.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -37,8 +40,23 @@
         <nav>
             <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
             <h1 id="account"></h1> <!-- สวัสดีคุณ ........  -->
-            <button class="btn-map" id="btnMap"><i class="fa-solid fa-map-location-dot"></i>
-                สถานที่จัดแข่งกิจกรรม</button>
+            <!-- Trigger Button -->
+            <button class="btn btn-primary" id="openModal">View PDF</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pdfModalLabel">PDF Viewer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="sample.pdf" id="pdfViewer" class="pdf-frame"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div class="content">
@@ -170,8 +188,14 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Custom JS -->
+    <script src="script.js"></script>
     <script src="scriptMain.js"></script>
     <script src="linkPages.js"></script>
+    <script src="./ModalPage/modal.js"></script>
 </body>
 
 </html>

@@ -46,45 +46,36 @@
             <div class="container">
                 <h2 class="headTxt">ค้นหาบัตรประจำตัวนักกีฬา</h2>
                 <h2 class="seTxt">คณะ</h2>
-                <select id="faculty" required>
+                <select id="faculty">
                     <option value="">เลือกคณะ/วิทยาลัย</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
-                    <option value="audi">Audi</option>
+                    <option value="CardED">คณะศึกษาศาสตร์</option>
+                    <option value="CardPE">คณะพลศึกษา</option>
+                    <option value="CardHM">คณะมนุษยศาสตร์</option>
+                    <option value="CardSC">คณะวิทยาศาสตร์</option>
+                    <option value="CardSS">คณะสังคมศาสตร์</option>
+                    <option value="CardMD">คณะแพทยศาสตร์</option>
+                    <option value="CardEG">คณะวิศวกรรมศาสตร์</option>
+                    <option value="CardFOFA">คณะศิลปกรรมศาสตร์</option>
+                    <option value="CardDT">คณะทันตแพทยศาสตร์</option>
+                    <option value="CardPH">คณะเภสัชศาสตร์</option>
+                    <option value="CardPT">คณะกายภาพบำบัด</option>
+                    <option value="CardNS">พยาบาลศาสตร์</option>
+                    <option value="CardIC">วิทยาลัยนานาชาติเพื่อศึกษาความยั่งยืน</option>
+                    <option value="CardCOSCI">วิทยาลัยนวัตกรรมสื่อสารสังคม</option>
+                    <option value="CardCCAS">วิทยาลัยโพธิวิชชาลัย</option>
+                    <option value="CardECS">คณะเศรษฐศาสตร์</option>
+                    <option value="CardAI">คณะเทคโนโลยีและนวัตกรรมผลิตภัณฑ์การเกษตร</option>
+                    <option value="CardECE">คณะวัฒนธรรมสิ่งแวดล้อมและการท่องเที่ยวเชิงนิเวศ</option>
+                    <option value="CardCCI">วิทยาลัยอุตสาหกรรมสร้างสรรค์</option>
+                    <option value="CardBAS">คณะบริหารธุรกิจเพื่อสังคม</option>
                 </select>
                 <h2 class="seTxt">ประเภทกีฬา</h2>
-                <form>
-                    <div class="boxradio">
-                        <input type="radio" id="html" value="HTML">
-                        <h3>ชาย</h3>
-                    </div>
-                    <div class="boxradio">
-                        <input type="radio" id="html" value="HTML">
-                        <h3>หญิง</h3>
-                    </div>
-                    <div class="boxradio">
-                        <input type="radio" id="html" value="HTML">
-                        <h3>ผสม</h3>
-                    </div>
-                </form>
-                <select id="sport" required>
+                <div class="boxsex">
+                    <input type="radio" name="gender" value="Male">ชาย
+                    <input type="radio" name="gender" value="Female">หญิง
+                    <input type="radio" name="gender" value="Others">ผสม
+                </div>
+                <select id="sport">
                     <option value="">เลือกกีฬา</option>
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -93,6 +84,7 @@
                     <option value="audi">Audi</option>
                     <option value="audi">Audi</option>
                     <option value="audi">Audi</option>
+                    <!-- <option value="audi">Audi</option> -->
                 </select>
                 <span>
                     <button class="btnsubmit"><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</button>
@@ -102,7 +94,7 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
-    <!-- <script src="scriptMain.js"></script> -->
+    <script src="./script/scriptCardforsmo.js"></script>
     <script src="linkPages.js"></script>
 </body>
 

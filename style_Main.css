@@ -111,8 +111,8 @@ nav {
   z-index: 0;
 }
 
-.btn-home,
-.btn-map {
+.btn-home {
+/* .btn-map */
   width: 150px;
   font-size: 24px;
   font-weight: bold;
@@ -132,14 +132,14 @@ nav h1 {
   color: #000000;
 }
 
-.btn-map {
+/* .btn-map {
   width: 300px;
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: 30px;
-}
+} */
 
 /* Content */
 .content {

@@ -29,14 +29,14 @@ form {
   margin-top: -20px;
 }
 
-.boxradio {
-  display: flex;
-  padding-top: 0;
+.boxsex {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.boxradio input {
-  margin-right: 10px;
+.boxsex input {
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .container span {

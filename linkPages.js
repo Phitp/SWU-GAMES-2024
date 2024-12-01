@@ -24,7 +24,6 @@ statuser.addEventListener("click", hideAndShow);
 
 // link page
 var home = document.getElementById('btnHome');
-var map = document.getElementById('btnMap');
 var login = document.getElementById('btnLogIn'); 
 var announce = document.getElementById('btnAnnounce');
 var card = document.getElementById('btnCard');
@@ -34,10 +33,6 @@ var picture = document.getElementById('btnPicture');
 
 home.addEventListener("click", function() {
   window.location.assign('index.php');
-});
-
-map.addEventListener("click", function() {
-  window.location.assign('Page_map.php');
 });
 
 login.addEventListener("click", function() {

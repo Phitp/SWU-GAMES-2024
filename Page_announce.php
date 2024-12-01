@@ -73,7 +73,7 @@
                     <button>กีฬา E &ndash; SPORT ROV</button>
                     <button>E &ndash; SPORT VALORANT</button>
                     <button>กีฬากรีฑา ผลัดผสม 4x100 เมตร</button>
-                    <!-- <button>กีฬากรีฑา ผลัดผสม 4x100 เมตร</button> -->
+                    <button>กีฬากรีฑา ผลัดผสม 4x400 เมตร</button>
                 </div>
                 <div class="line"></div>
                 <div class="committee" id="committeeScore">

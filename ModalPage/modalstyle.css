@@ -1,0 +1,10 @@
+.pdf-frame {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+/* Custom button styling if needed */
+#openModal {
+  margin: 20px;
+}
