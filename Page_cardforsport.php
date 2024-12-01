@@ -7,7 +7,7 @@
     <title>บัตรประจำตัวนักกีฬา</title>
     <link rel="stylesheet" href="style_LinkPages.css">
     <link rel="stylesheet" href="./style/style_CardForSport.css">
-    
+
 </head>
 
 <body>
@@ -45,7 +45,11 @@
 
         <div class="content">
             <div class="container">
-                .
+                <h2 class="headTxt">ค้นหาบัตรประจำตัวนักกีฬา</h2>
+                <div class="boxinput">
+                    <input type="text" placeholder="รหัสนิสิต 13 หลัก">
+                    <button class="btnsubmit"><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</button>
+                </div>
             </div>
         </div>
     </div>

@@ -44,7 +44,59 @@
 
         <div class="content">
             <div class="container">
-
+                <h2 class="headTxt">ค้นหาบัตรประจำตัวนักกีฬา</h2>
+                <h2 class="seTxt">คณะ</h2>
+                <select id="faculty" required>
+                    <option value="">เลือกคณะ/วิทยาลัย</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <h2 class="seTxt">ประเภทกีฬา</h2>
+                <form>
+                    <div class="boxradio">
+                        <input type="radio" id="html" value="HTML">
+                        <h3>ชาย</h3>
+                    </div>
+                    <div class="boxradio">
+                        <input type="radio" id="html" value="HTML">
+                        <h3>หญิง</h3>
+                    </div>
+                    <div class="boxradio">
+                        <input type="radio" id="html" value="HTML">
+                        <h3>ผสม</h3>
+                    </div>
+                </form>
+                <select id="sport" required>
+                    <option value="">เลือกกีฬา</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <span>
+                    <button class="btnsubmit"><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</button>
+                </span>
             </div>
         </div>
     </div>
