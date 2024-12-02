@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style_LinkPages.css">
     <style>
         .content {
-            background: src('./picture/cover/Maptest01.png');
+            background: src('./picture/coverweb/Maptest01.png');
         }
     </style>
 </head>
