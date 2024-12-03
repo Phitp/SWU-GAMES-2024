@@ -79,11 +79,11 @@ data_announce.forEach(data_an => {
   const txt = document.createElement("div");
   txt.classList.add('post');
   if(temp == 0) {
-    gif = "./gif/new_2.gif";
+    gif = "../gif/new_2.gif";
     tempdate = data_an.date;
     temp += 1;
   } else if(tempdate == data_an.date) {
-    gif = "./gif/new_2.gif";
+    gif = "../gif/new_2.gif";
   } else {
     gif = "";
   }

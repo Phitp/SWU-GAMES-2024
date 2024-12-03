@@ -32,21 +32,21 @@ var live = document.getElementById('btnLive');
 var picture = document.getElementById('btnPicture');
 
 home.addEventListener("click", function() {
-  window.location.assign('index.php');
+  window.location.assign('../PageMain/index.php');
 });
 
 login.addEventListener("click", function() {
-  window.location.assign('Page_login.php');
+  window.location.assign('../PageLogin/Page_login.php');
 });
 
 announce.addEventListener("click", function() {
-  window.location.assign('Page_announce.php');
+  window.location.assign('../PageAnnounce/Page_announce.php');
 });
 
 card.addEventListener("click", function() {
   // window.location.assign('Page_card.php');
   alert("กรุณาเข้าสู่ระบบเพื่อดูข้อมูล");
-  window.location.assign('Page_login.php');
+  window.location.assign('../PageLogin/Page_login.php');
 });
 
 // help.addEventListener("click", function() {
