@@ -90,7 +90,7 @@ data_announce.forEach(data_an => {
 
   txt.innerHTML = `
                   วันที่ ${data_an.date} <img src="${gif}"><br>
-                  เนื้อหา: ${data_an.content} <a href="${data_an.link}" target="_blank">รายละเอียด</a>
+                  เนื้อหา: ${data_an.content} <a href="${data_an.link}" target="_blank">รายละเอียดเพิ่มเติม</a>
                   `;
   postsupdate.appendChild(txt);
 });

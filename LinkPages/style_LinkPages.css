@@ -101,7 +101,7 @@ body {
 /* navbar */
 nav {
   display: flex;
-  width: 1600px;
+  width: 1647px;
   height: 56px;
   align-items: center;
   border-bottom: 2px solid #000000;
@@ -143,7 +143,7 @@ nav h1 {
 
 /* Content */
 .content {
-  width: 1600px;
+  width: 1647px;
   height: 1200px;
   margin-left: 250px;
   padding-bottom: 85px;

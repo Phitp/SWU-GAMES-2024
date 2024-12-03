@@ -45,6 +45,7 @@
         <div class="content">
             <div class="container">
                 <h2>กีฬาประเภทชาย</h2>
+                <hr>
                 <div class="btnscore">
                     <button>กีฬาฟุตซอล</button>
                     <button>กีฬาบาสเกตบอล</button>
@@ -55,6 +56,7 @@
                     <button>กีฬากรีฑา 400 เมตร</button>
                 </div>
                 <h2>กีฬาประเภทหญิง</h2>
+                <hr>
                 <div class="btnscore">
                     <button>กีฬาแชร์บอล</button>
                     <button>กีฬาบาสเกตบอล</button>
@@ -65,7 +67,8 @@
                     <button>กีฬากรีฑา 400 เมตร</button>
                 </div>
                 <h2>กีฬาประเภทผสม</h2>
-                <div class="btnscore">
+                <hr>
+                <div id="mixedscore" class="btnscore">
                     <button>กีฬาแบดมินตัน</button>
                     <button> กีฬา A &ndash; MATH</button>
                     <button>กีฬา CROSSWORD</button>
@@ -75,11 +78,11 @@
                     <button>กีฬากรีฑา ผลัดผสม 4x100 เมตร</button>
                     <button>กีฬากรีฑา ผลัดผสม 4x400 เมตร</button>
                 </div>
-                <div class="line"></div>
+                <!-- <div class="line"></div>
                 <div class="committee" id="committeeScore">
                     <h2>สำหรับกรรมการ</h2>
                     <button>กรอกคะแนน</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
