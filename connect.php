@@ -1,14 +1,24 @@
 <?php
+
+if ($open_connect != 1) {
+  die(header('Location: index.php'));
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
+$database = 'swugames2024';
+$sport = NULL;
+$socket = NULL;
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$connect = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+if (!$connect) {
+  die("Connection failed: " . mysqli_connect_error($connect));
+} else {
+  mysqli_set_charset($connect,'utf8');
 }
-echo "Connected successfully";
+
 ?>

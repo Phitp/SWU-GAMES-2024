@@ -46,22 +46,22 @@
             <div class="login-style">
                 <div class="login-container">
                     <h1>เข้าสู่ระบบ</h1>
-                    <form id="login-form">
+                    <form action="login.php" method="post">
                         <div class="input-group">
-                            <label for="name" id="IDstd">รหัสนิสิต 13 หลัก</label>
+                            <label>รหัสนิสิต 13 หลัก</label>
                             <div class="input-wrapper">
-                                <input type="text" placeholder="เช่น: 67xxxxxxxxxxx">
+                                <input name="user_account" type="text" placeholder="เช่น: 67xxxxxxxxxxx" required>
                                 <i class="fa-regular fa-user"></i>
                             </div>
                         </div>
                         <div class="input-group">
-                            <label for="password">รหัสผ่าน</label>
+                            <label>รหัสผ่าน</label>
                             <div class="input-wrapper password">
-                                <input type="password" placeholder="กรอกรหัสผ่านของคุณ" id="Password">
+                                <input name="password_account" type="password" placeholder="กรอกรหัสผ่านของคุณ" required>
                                 <i class="fa-regular fa-eye-slash eye" id="eyeIcon"></i>
                             </div>
                         </div>
-                        <button class="loginBtn">เข้าสู่ระบบ</button>
+                        <button class="loginBtn" type="submit">เข้าสู่ระบบ</button>
                     </form>
                 </div>
             </div>

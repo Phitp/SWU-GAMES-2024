@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWU GAMES 2024</title>
-    <link rel="stylesheet" href="../LinkPages/style_LinkPages.css">
-    <link rel="stylesheet" href="style_Main.css">
+    <link rel="stylesheet" href="./LinkPages/style_LinkPages.css">
+    <link rel="stylesheet" href="./PageMain/style_Main.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="homepage">
         <div class="sidebar">
             <header>
-                <img src="../picture/logoSWU/Srinakharinwirot.png">
+                <img src="./picture/logoSWU/Srinakharinwirot.png">
                 <h2>SWU GAMES 2024</h2>
             </header>
             <ul>
@@ -171,7 +171,7 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
-    <script src="scriptMain.js"></script>
+    <script src="./PageMain/scriptMain.js"></script>
     <script src="../LinkPages/linkPages.js"></script>
 </body>
 
