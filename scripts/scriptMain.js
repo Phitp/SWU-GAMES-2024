@@ -1,3 +1,42 @@
+// link page
+var home = document.getElementById('btnHome');
+var login = document.getElementById('btnLogIn');
+var announce = document.getElementById('btnAnnounce');
+var card = document.getElementById('btnCard');
+var help = document.getElementById('btnHelp');
+var live = document.getElementById('btnLive');
+var picture = document.getElementById('btnPicture');
+
+home.addEventListener("click", function() {
+  window.location.assign('index.php');
+});
+
+login.addEventListener("click", function() {
+  window.location.assign('login/login.php');
+});
+
+// announce.addEventListener("click", function() {
+//   window.location.assign('../PageAnnounce/Page_announce.php');
+// });
+
+// card.addEventListener("click", function() {
+  // window.location.assign('Page_card.php');
+  // alert("กรุณาเข้าสู่ระบบเพื่อดูข้อมูล");
+//   window.location.assign('../PageLogin/Page_login.php');
+// });
+
+// help.addEventListener("click", function() {
+//   window.open('ไฟล์วิธีการใช้งาน', '_blank');
+// });
+
+// live.addEventListener("click", function() {
+//   window.open('ลิ้งช่องทางการไลฟ์', '_blank');
+// });
+
+// picture.addEventListener("click", function() {
+//   window.open('ลิ้งช่องทางรูปภาพ', '_blank');
+// });
+
 // slide match
 const slides = document.querySelector('.slides');
 const images = document.querySelectorAll('.slides img');
@@ -79,11 +118,11 @@ data_announce.forEach(data_an => {
   const txt = document.createElement("div");
   txt.classList.add('post');
   if(temp == 0) {
-    gif = "./gif/new_2.gif";
+    gif = "_gif/new_2.gif";
     tempdate = data_an.date;
     temp += 1;
   } else if(tempdate == data_an.date) {
-    gif = "./gif/new_2.gif";
+    gif = "_gif/new_2.gif";
   } else {
     gif = "";
   }
