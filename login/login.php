@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL ^ E_NOTICE);
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="th">
 
@@ -9,7 +14,10 @@
 
 <body>
 
-    <?php include("../sidebar_navbar.php"); ?>
+    <?php include("../sidebar.php");
+    include("../navbar.php"); ?>
+
+    <?php include("../content.php") ?>
 
     <div class="content">
         <?php include("login_form.php") ?>

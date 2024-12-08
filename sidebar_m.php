@@ -1,15 +1,4 @@
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@400;500;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-  /* styles.css */
-  body {
-    margin: 0;
-    font-family: Sarabun, sans-serif;
-    box-sizing: border-box;
-    height: 100vh;
-    background-color: #f2f2f2;
-  }
-
   /* Sidebar */
   .sidebar {
     width: 250px;
@@ -102,62 +91,6 @@
   .today-user p {
     margin-left: 25px;
   }
-
-  /* navbar */
-  nav {
-    display: flex;
-    width: 1647px;
-    height: 56px;
-    align-items: center;
-    border-bottom: 2px solid #000000;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-    margin-left: 250px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .btn-home,
-  .btn-map {
-    width: 150px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: transparent;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-  }
-
-  .btn-home {
-    align-items: center;
-    padding: auto;
-  }
-
-  nav h1 {
-    font-size: 24px;
-    color: #000000;
-  }
-
-  .btn-map {
-    width: 300px;
-    font-size: 20px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin-left: auto;
-    margin-right: 30px;
-  }
-
-  /* Content */
-  .content {
-    width: 1647px;
-    height: 1200px;
-    margin-left: 250px;
-    padding-bottom: 85px;
-    padding-top: 5px;
-    /* background: url("../picture/coverweb/test2023.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 </style>
 
 <div class="sidebar">
@@ -183,15 +116,12 @@
   </ul>
 </div>
 
-<nav>
-  <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
-  <h1 id="account"></h1> <!-- สวัสดีคุณ ........ -->
-  <button class="btn-map" id="btnMap"><i class="fa-solid fa-map-location-dot"></i>
-    สถานที่จัดแข่งกิจกรรม</button>
-</nav>
-
-<script src="https://kit.fontawesome.com/a81fe316a6.js" crossorigin="anonymous"></script>
 <script>
+  var logout = document.getElementById('btnLogOut');
+  logout.addEventListener("click", function() {
+    window.location.assign('login/logout.php');
+  });
+
   // การเคลื่อนไหวสถิติการใช้งาน
   var statUserToday = document.getElementById('todayUser');
   var statuser = document.getElementById('statUser');
