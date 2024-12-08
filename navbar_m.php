@@ -65,7 +65,8 @@ require('connect.php');
     <h1 id="account">สวัสดีคุณ <?= $objResult["first_name"]; ?></h1> <!-- สวัสดีคุณ ........ -->
   <?php
   }
-  mysqli_close($connect);
+  // $connect->close();
+  // mysqli_close($connect);
   ?>
   <button class="btn-map" id="btnMap"><i class="fa-solid fa-map-location-dot"></i>
     สถานที่จัดแข่งกิจกรรม</button>

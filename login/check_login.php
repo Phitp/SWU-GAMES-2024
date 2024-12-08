@@ -32,5 +32,5 @@ if (!$objResult) {
   //session_write_close();
   echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
 }
-mysqli_close($connect);
+$connect->close();
 ?>

@@ -1,6 +1,8 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 session_start();
+$open_connect = 1;
+require('../../connect.php');
 ?>
 
 <style>
@@ -21,11 +23,15 @@ session_start();
     text-align: start;
   }
 
-  select {
+  select,
+  .faculty {
     width: 500px;
     padding: 10px;
     font-size: 16px;
     border-radius: 6px;
+  }
+
+  select {
     cursor: pointer;
   }
 
@@ -83,29 +89,23 @@ session_start();
     <div class="container">
       <h2 class="headTxt">ค้นหาบัตรประจำตัวนักกีฬา</h2>
       <h2 class="seTxt">คณะ</h2>
-      <select id="faculty">
-        <option value="">เลือกคณะ/วิทยาลัย</option>
-        <option value="CardED">คณะศึกษาศาสตร์</option>
-        <option value="CardPE">คณะพลศึกษา</option>
-        <option value="CardHM">คณะมนุษยศาสตร์</option>
-        <option value="CardSC">คณะวิทยาศาสตร์</option>
-        <option value="CardSS">คณะสังคมศาสตร์</option>
-        <option value="CardMD">คณะแพทยศาสตร์</option>
-        <option value="CardEG">คณะวิศวกรรมศาสตร์</option>
-        <option value="CardFOFA">คณะศิลปกรรมศาสตร์</option>
-        <option value="CardDT">คณะทันตแพทยศาสตร์</option>
-        <option value="CardPH">คณะเภสัชศาสตร์</option>
-        <option value="CardPT">คณะกายภาพบำบัด</option>
-        <option value="CardNS">พยาบาลศาสตร์</option>
-        <option value="CardIC">วิทยาลัยนานาชาติเพื่อศึกษาความยั่งยืน</option>
-        <option value="CardCOSCI">วิทยาลัยนวัตกรรมสื่อสารสังคม</option>
-        <option value="CardCCAS">วิทยาลัยโพธิวิชชาลัย</option>
-        <option value="CardECS">คณะเศรษฐศาสตร์</option>
-        <option value="CardAI">คณะเทคโนโลยีและนวัตกรรมผลิตภัณฑ์การเกษตร</option>
-        <option value="CardECE">คณะวัฒนธรรมสิ่งแวดล้อมและการท่องเที่ยวเชิงนิเวศ</option>
-        <option value="CardCCI">วิทยาลัยอุตสาหกรรมสร้างสรรค์</option>
-        <option value="CardBAS">คณะบริหารธุรกิจเพื่อสังคม</option>
-      </select>
+
+      <?php
+      $strSQL = "SELECT * 
+			FROM account
+			WHERE user_id = '" . $_SESSION['user_id1'] . "' ";
+      $objQuery = mysqli_query($connect, $strSQL);
+      $objResult = mysqli_fetch_array($objQuery);
+
+      if (!$objResult) {
+        echo '';
+      } else {
+      ?>
+        <input type="text" class="faculty" readonly value='<?= $objResult["first_name"]; ?>'>
+      <?php
+      }
+      ?>
+
       <h2 class="seTxt">ประเภทกีฬา</h2>
       <div class="boxsex">
         <input type="radio" name="gender" value="Male">ชาย
@@ -128,8 +128,8 @@ session_start();
       </span>
     </div>
   </div>
-  </div>
 
+  <?php $connect->close(); ?>
 </body>
 
 </html>
