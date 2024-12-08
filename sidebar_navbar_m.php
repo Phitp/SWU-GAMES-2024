@@ -65,6 +65,12 @@
     cursor: pointer;
   }
 
+  .log-out {
+    background-color: #A40001;
+    border-radius: 5px;
+    color: white;
+  }
+
   .icon-sidebar:hover,
   .stat-user:hover,
   .satatuseractive {
@@ -160,7 +166,7 @@
     <h2>SWU GAMES 2024</h2>
   </header>
   <ul>
-    <li class="icon-sidebar" id="btnLogIn"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</li>
+    <li class="icon-sidebar log-out" id="btnLogOut"><i class="fa-solid fa-right-to-bracket"></i> ออกจากระบบ</li>
     <li class="icon-sidebar" id="btnAnnounce"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
     <li class="icon-sidebar" id="btnCard"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
     <li class="icon-sidebar" id="btnHelp"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>

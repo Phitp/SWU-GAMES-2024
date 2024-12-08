@@ -1,6 +1,7 @@
 // link page
 var home = document.getElementById('btnHome');
 var login = document.getElementById('btnLogIn');
+var logout = document.getElementById('btnLogOut');
 var announce = document.getElementById('btnAnnounce');
 var card = document.getElementById('btnCard');
 var help = document.getElementById('btnHelp');
@@ -13,6 +14,10 @@ home.addEventListener("click", function() {
 
 login.addEventListener("click", function() {
   window.location.assign('login/login.php');
+});
+
+logout.addEventListener("click", function() {
+  window.location.assign('login/logout.php');
 });
 
 // announce.addEventListener("click", function() {

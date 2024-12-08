@@ -85,7 +85,7 @@
 <div class="login-style">
   <div class="login-container">
     <h1>เข้าสู่ระบบ</h1>
-    <form action="login.php" method="post">
+    <form action="check_login.php" method="post">
       <div class="input-group">
         <label>รหัสนิสิต 13 หลัก</label>
         <div class="input-wrapper">

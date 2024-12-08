@@ -1,10 +1,3 @@
-<?php
-error_reporting(E_ALL ^ E_NOTICE);
-session_start();
-$open_connect = 1;
-require('../connect.php');
-?>
-
 <!DOCTYPE html>
 <html lang="th">
 
@@ -24,7 +17,5 @@ require('../connect.php');
 
     <script src="../scripts/scriptLogin.js"></script>
 </body>
-
-<?php mysqli_close($connect) ?>
 
 </html>
