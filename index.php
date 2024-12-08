@@ -26,11 +26,11 @@ if (!isset($_SESSION['status1'])) {
     <?php
     if (!isset($_SESSION["status1"])) {
         include("sidebar.php");
+        include("navbar.php");
     } else {
         include("sidebar_m.php");
+        include("navbar_m.php");
     }
-
-    include("navbar.php");
     ?>
 
     <?php include("content.php") ?>
@@ -166,7 +166,7 @@ if (!isset($_SESSION['status1'])) {
         var home = document.getElementById('btnHome');
         var login = document.getElementById('btnLogIn');
         // var announce = document.getElementById('btnAnnounce');
-        // var card = document.getElementById('btnCard');
+        var card = document.getElementById('btnCard');
         // var help = document.getElementById('btnHelp');
         // var live = document.getElementById('btnLive');
         // var picture = document.getElementById('btnPicture');
@@ -183,11 +183,9 @@ if (!isset($_SESSION['status1'])) {
         //   window.location.assign('../PageAnnounce/Page_announce.php');
         // });
 
-        // card.addEventListener("click", function() {
-        // window.location.assign('Page_card.php');
-        // alert("กรุณาเข้าสู่ระบบเพื่อดูข้อมูล");
-        //   window.location.assign('../PageLogin/Page_login.php');
-        // });
+        card.addEventListener("click", function() {
+            window.location.assign('card/check_card.php');
+        });
 
         // help.addEventListener("click", function() {
         //   window.open('ไฟล์วิธีการใช้งาน', '_blank');
@@ -200,7 +198,9 @@ if (!isset($_SESSION['status1'])) {
         // picture.addEventListener("click", function() {
         //   window.open('ลิ้งช่องทางรูปภาพ', '_blank');
         // });
+    </script>
 
+    <script>
         // slide match
         const slides = document.querySelector('.slides');
         const images = document.querySelectorAll('.slides img');

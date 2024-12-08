@@ -1,3 +1,9 @@
+<?php
+session_start();
+$open_connect = 1;
+require('connect.php');
+?>
+
 <style>
   /* navbar */
   nav {
@@ -45,7 +51,22 @@
 
 <nav>
   <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
-    <h1 id="account"></h1> <!-- สวัสดีคุณ ........ -->
+  <?php
+  $strSQL = "SELECT * 
+			FROM account
+			WHERE user_id = '" . $_SESSION['user_id1'] . "' ";
+  $objQuery = mysqli_query($connect, $strSQL);
+  $objResult = mysqli_fetch_array($objQuery);
+
+  if (!$objResult) {
+    echo '';
+  } else {
+  ?>
+    <h1 id="account">สวัสดีคุณ <?= $objResult["first_name"]; ?></h1> <!-- สวัสดีคุณ ........ -->
+  <?php
+  }
+  mysqli_close($connect);
+  ?>
   <button class="btn-map" id="btnMap"><i class="fa-solid fa-map-location-dot"></i>
     สถานที่จัดแข่งกิจกรรม</button>
 </nav>

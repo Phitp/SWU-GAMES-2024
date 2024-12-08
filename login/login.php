@@ -23,7 +23,41 @@ session_start();
         <?php include("login_form.php") ?>
     </div>
 
-    <script src="../scripts/scriptLogin.js"></script>
+    
 </body>
 
 </html>
+
+<script>
+    // link page
+    var home = document.getElementById('btnHome');
+    // var announce = document.getElementById('btnAnnounce');
+    var card = document.getElementById('btnCard');
+    // var help = document.getElementById('btnHelp');
+    // var live = document.getElementById('btnLive');
+    // var picture = document.getElementById('btnPicture');
+
+    home.addEventListener("click", function() {
+        window.location.assign('../index.php');
+    });
+
+    // announce.addEventListener("click", function() {
+    //   window.location.assign('../PageAnnounce/Page_announce.php');
+    // });
+
+    card.addEventListener("click", function() {
+    window.location.assign('../card/ch_card.php');
+    });
+
+    // help.addEventListener("click", function() {
+    //   window.open('ไฟล์วิธีการใช้งาน', '_blank');
+    // });
+
+    // live.addEventListener("click", function() {
+    //   window.open('ลิ้งช่องทางการไลฟ์', '_blank');
+    // });
+
+    // picture.addEventListener("click", function() {
+    //   window.open('ลิ้งช่องทางรูปภาพ', '_blank');
+    // });
+</script>

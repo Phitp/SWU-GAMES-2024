@@ -95,7 +95,7 @@
 
 <div class="sidebar">
   <header>
-    <img src="Srinakharinwirot.png">
+    <img src="swu.png">
     <h2>SWU GAMES 2024</h2>
   </header>
   <ul>
