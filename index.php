@@ -28,7 +28,11 @@ if (!isset($_SESSION['status1'])) {
         include("sidebar.php");
         include("navbar.php");
     } else {
-        include("sidebar_m.php");
+        if ($_SESSION["status1"] == "Committee") {
+            include("sidebar_c.php");
+        } else {
+            include("sidebar_m.php");
+        }
         include("navbar_m.php");
     }
     ?>

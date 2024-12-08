@@ -60,10 +60,23 @@
     color: white;
   }
 
+  .btnscore {
+    background-color: #004aa4;
+    border-radius: 5px;
+    color: white;
+  }
+
   .icon-sidebar:hover,
   .stat-user:hover,
   .satatuseractive {
     background-color: #A40001;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: white;
+  }
+
+  .btnscore:hover {
+    background-color: #004aa4;
     border-radius: 5px;
     padding-left: 10px;
     color: white;
@@ -100,11 +113,8 @@
   </header>
   <ul>
     <li class="icon-sidebar log-out" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/login/logout.php');"><i class="fa-solid fa-right-to-bracket"></i> ออกจากระบบ</li>
+    <li class="btnscore" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/committee/add_score.php');"><i class="fa-solid fa-pen-ruler"></i> กรอกคะแนน</li>
     <li class="icon-sidebar" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/announce/announce_score.php');"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
-    <li class="icon-sidebar" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/card/check_card.php');"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
-    <li class="icon-sidebar" id="btnHelp"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
-    <li class="icon-sidebar" id="btnLive"><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
-    <li class="icon-sidebar" id="btnPicture"><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
     <li class="stat-user" id="statUser"><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <i
         class="fa-solid fa-angle-left arrow" id="arrowIcon"></i></li>
     <div class="today-user" id="todayUser">
