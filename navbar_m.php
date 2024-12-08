@@ -50,7 +50,7 @@ require('connect.php');
 </style>
 
 <nav>
-  <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
+  <button class="btn-home" id="btnHome" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/index.php');"><i class="fa-solid fa-house"></i> HOME</button>
   <?php
   $strSQL = "SELECT * 
 			FROM account

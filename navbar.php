@@ -44,7 +44,7 @@
 </style>
 
 <nav>
-  <button class="btn-home" id="btnHome"><i class="fa-solid fa-house"></i> HOME</button>
+  <button class="btn-home" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/index.php');"><i class="fa-solid fa-house"></i> HOME</button>
     <h1 id="account"></h1> <!-- สวัสดีคุณ ........ -->
   <button class="btn-map" id="btnMap"><i class="fa-solid fa-map-location-dot"></i>
     สถานที่จัดแข่งกิจกรรม</button>

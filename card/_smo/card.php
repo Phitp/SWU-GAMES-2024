@@ -74,10 +74,10 @@ session_start();
 
 <body>
 
-  <?php include("../sidebar.php");
-  include("../navbar.php"); ?>
+  <?php include("../../sidebar_m.php");
+  include("../../navbar_m.php"); ?>
 
-  <?php include("../content.php") ?>
+  <?php include("../../content.php") ?>
 
   <div class="content">
     <div class="container">
@@ -133,32 +133,3 @@ session_start();
 </body>
 
 </html>
-
-<script>
-  // link page
-  var home = document.getElementById('btnHome');
-  // var announce = document.getElementById('btnAnnounce');
-  // var help = document.getElementById('btnHelp');
-  // var live = document.getElementById('btnLive');
-  // var picture = document.getElementById('btnPicture');
-
-  home.addEventListener("click", function() {
-    window.location.assign('../index.php');
-  });
-
-  // announce.addEventListener("click", function() {
-  //   window.location.assign('../PageAnnounce/Page_announce.php');
-  // });
-
-  // help.addEventListener("click", function() {
-  //   window.open('ไฟล์วิธีการใช้งาน', '_blank');
-  // });
-
-  // live.addEventListener("click", function() {
-  //   window.open('ลิ้งช่องทางการไลฟ์', '_blank');
-  // });
-
-  // picture.addEventListener("click", function() {
-  //   window.open('ลิ้งช่องทางรูปภาพ', '_blank');
-  // });
-</script>

@@ -5,7 +5,7 @@ session_start();
 <?php
 if (!isset($_SESSION['status1'])) {
 } else {
-    echo $_SESSION['status1'];
+    // echo $_SESSION['status1'];
     // echo "<meta http-equiv='refresh' content='3;url=index.php'>";
     echo "<meta name='author' content='url=index.php'>";
 }
@@ -158,47 +158,7 @@ if (!isset($_SESSION['status1'])) {
                 <!-- Images will be dynamically added here -->
             </div>
         </div>
-
     </div>
-
-    <script>
-        // link page
-        var home = document.getElementById('btnHome');
-        var login = document.getElementById('btnLogIn');
-        // var announce = document.getElementById('btnAnnounce');
-        var card = document.getElementById('btnCard');
-        // var help = document.getElementById('btnHelp');
-        // var live = document.getElementById('btnLive');
-        // var picture = document.getElementById('btnPicture');
-
-        home.addEventListener("click", function() {
-            window.location.assign('index.php');
-        });
-
-        login.addEventListener("click", function() {
-            window.location.assign('login/login.php');
-        });
-
-        // announce.addEventListener("click", function() {
-        //   window.location.assign('../PageAnnounce/Page_announce.php');
-        // });
-
-        card.addEventListener("click", function() {
-            window.location.assign('card/check_card.php');
-        });
-
-        // help.addEventListener("click", function() {
-        //   window.open('ไฟล์วิธีการใช้งาน', '_blank');
-        // });
-
-        // live.addEventListener("click", function() {
-        //   window.open('ลิ้งช่องทางการไลฟ์', '_blank');
-        // });
-
-        // picture.addEventListener("click", function() {
-        //   window.open('ลิ้งช่องทางรูปภาพ', '_blank');
-        // });
-    </script>
 
     <script>
         // slide match

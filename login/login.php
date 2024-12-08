@@ -46,7 +46,7 @@ session_start();
     // });
 
     card.addEventListener("click", function() {
-    window.location.assign('../card/ch_card.php');
+    window.location.assign('../card/check_card.php');
     });
 
     // help.addEventListener("click", function() {
