@@ -56,6 +56,7 @@
   }
 
   .eye {
+    font-size: 15px;
     cursor: pointer;
   }
 
@@ -96,7 +97,7 @@
       <div class="input-group">
         <label>รหัสผ่าน</label>
         <div class="input-wrapper password">
-          <input name="password_account" type="password" placeholder="กรอกรหัสผ่านของคุณ" required>
+          <input name="password_account" type="password" placeholder="กรอกรหัสผ่านของคุณ" required id="password_eye">
           <i class="fa-regular fa-eye-slash eye" id="eyeIcon"></i>
         </div>
       </div>
@@ -106,18 +107,18 @@
 </div>
 
 <script>
-  // var eyeicon = document.getElementById('eyeIcon');
-  // var userpassword = document.getElementById('Password');
+  var eyeicon = document.getElementById('eyeIcon');
+  var userpassword = document.getElementById('password_eye');
 
-  // eyeicon.onclick = function() {
-  //   if (userpassword.type == "password") {
-  //     userpassword.type = "text";
-  //     eyeicon.classList.remove('fa-eye-slash');
-  //     eyeicon.classList.add('fa-eye');
-  //   } else {
-  //     userpassword.type = "password";
-  //     eyeicon.classList.add('fa-eye-slash');
-  //     eyeicon.classList.remove('fa-eye');
-  //   }
-  // }
+  eyeicon.onclick = function() {
+    if (userpassword.type == "password") {
+      userpassword.type = "text";
+      eyeicon.classList.remove('fa-eye-slash');
+      eyeicon.classList.add('fa-eye');
+    } else {
+      userpassword.type = "password";
+      eyeicon.classList.add('fa-eye-slash');
+      eyeicon.classList.remove('fa-eye');
+    }
+  }
 </script>
