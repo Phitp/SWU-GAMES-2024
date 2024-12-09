@@ -351,15 +351,6 @@ require('../../connect.php');
         }
       </script>
 
-      <?php
-      // $sportSQL = "SELECT * 
-      //     FROM sport 
-      //     WHERE sport_gender = ''";
-      // $sportQuery = mysqli_query($connect, $sportSQL);
-      // $sportResult = mysqli_fetch_array($sportQuery);
-      // echo mysqli_num_rows($sportQuery);
-      ?>
-
     </div>
   </div>
 
