@@ -115,38 +115,5 @@
     <li class="icon-sidebar log-out" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/login/logout.php');"><i class="fa-solid fa-right-to-bracket"></i> ออกจากระบบ</li>
     <li class="btnscore" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/committee/add_score.php');"><i class="fa-solid fa-pen-ruler"></i> กรอกคะแนน</li>
     <li class="icon-sidebar" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/announce/announce_score.php');"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
-    <li class="stat-user" id="statUser"><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <i
-        class="fa-solid fa-angle-left arrow" id="arrowIcon"></i></li>
-    <div class="today-user" id="todayUser">
-      <p><i class="fa-solid fa-network-wired"></i> วันนี้ : 0000 คน</p>
-      <p><i class="fa-solid fa-network-wired"></i> เมื่อวานนี้ : 0000 คน</p>
-      <p><i class="fa-solid fa-network-wired"></i> เดือนนี้ : 0000 คน</p>
-      <p><i class="fa-solid fa-network-wired"></i> ทั้งหมด : 0000 คน</p>
-    </div>
   </ul>
 </div>
-
-<script>
-  // การเคลื่อนไหวสถิติการใช้งาน
-  var statUserToday = document.getElementById('todayUser');
-  var statuser = document.getElementById('statUser');
-  var arrowicon = document.getElementById('arrowIcon');
-  var display = 1;
-
-  function hideAndShow() {
-    if (display == 1) {
-      statUserToday.style.display = "block";
-      arrowicon.classList.remove("fa-angle-left");
-      arrowicon.classList.add("fa-angle-down");
-      statuser.classList.add("satatuseractive");
-      display = 0;
-    } else {
-      statUserToday.style.display = "none";
-      arrowicon.classList.add("fa-angle-left");
-      arrowicon.classList.remove("fa-angle-down");
-      statuser.classList.remove("satatuseractive");
-      display = 1;
-    }
-  }
-  statuser.addEventListener("click", hideAndShow);
-</script>

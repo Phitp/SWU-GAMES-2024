@@ -62,7 +62,8 @@
 
   .icon-sidebar:hover,
   .stat-user:hover,
-  .satatuseractive {
+  .satatuseractive,
+  .live:hover {
     background-color: #A40001;
     border-radius: 5px;
     padding-left: 10px;
@@ -73,11 +74,13 @@
     background-color: #2F333E;
   }
 
-  .stat-user .arrow {
+  .stat-user .arrow,
+  .live .arrow {
     margin-left: auto;
   }
 
-  .today-user {
+  .today-user,
+  .socailbox {
     width: 210px;
     height: auto;
     font-size: 15px;
@@ -86,6 +89,20 @@
     padding-top: 0;
     margin-top: -6px;
     display: none;
+  }
+
+  .socailbox {
+    margin-bottom: -15px;
+  }
+
+  .socailbox i {
+    font-size: 35px;
+  }
+
+  .socailbox p {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
   }
 
   .today-user p {
@@ -103,7 +120,11 @@
     <li class="icon-sidebar" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/announce/announce_score.php');"><i class="fa-solid fa-trophy"></i> ประกาศผลการแข่งขัน</li>
     <li class="icon-sidebar" onclick="window.location.assign('http://127.0.0.1/SWU-GAMES-2024/card/check_card.php');"><i class="fa-solid fa-id-card"></i> บัตรประจำตัวนักกีฬา</li>
     <li class="icon-sidebar" id="btnHelp"><i class="fa-solid fa-circle-info"></i> วิธีการใช้งาน</li>
-    <li class="icon-sidebar" id="btnLive"><i class="fa-solid fa-video"></i> ช่องทางการรับชม</li>
+    <li class="stat-user" id="btnLive"><i class="fa-solid fa-video"></i> ช่องทางการรับชม <i
+        class="fa-solid fa-angle-left arrow" id="arrowIcon_live"></i></li>
+    <div class="socailbox" id="socail">
+      <p><i class="fa-brands fa-facebook" onclick="window.open('https://www.facebook.com/soswu');" style="color: blue;"></i> <i class="fa-brands fa-youtube" onclick="window.open('https://www.youtube.com/@soswu_official');" style="color: red;"></i></p>
+    </div>
     <li class="icon-sidebar" id="btnPicture"><i class="fa-solid fa-image"></i> ประมวลภาพ</li>
     <li class="stat-user" id="statUser"><i class="fa-solid fa-chart-simple"></i> สถิติการเข้าใช้งาน <i
         class="fa-solid fa-angle-left arrow" id="arrowIcon"></i></li>
@@ -117,26 +138,49 @@
 </div>
 
 <script>
+  var socailBox = document.getElementById('socail');
+  var live = document.getElementById('btnLive');
+  var livearrow = document.getElementById('arrowIcon_live');
+  var displaylive = 1;
+
   // การเคลื่อนไหวสถิติการใช้งาน
   var statUserToday = document.getElementById('todayUser');
   var statuser = document.getElementById('statUser');
   var arrowicon = document.getElementById('arrowIcon');
-  var display = 1;
+  var displaystat = 1;
 
-  function hideAndShow() {
-    if (display == 1) {
+  function hideAndShowStat() {
+    if (displaystat == 1) {
       statUserToday.style.display = "block";
       arrowicon.classList.remove("fa-angle-left");
       arrowicon.classList.add("fa-angle-down");
       statuser.classList.add("satatuseractive");
-      display = 0;
+      displaystat = 0;
     } else {
       statUserToday.style.display = "none";
       arrowicon.classList.add("fa-angle-left");
       arrowicon.classList.remove("fa-angle-down");
       statuser.classList.remove("satatuseractive");
-      display = 1;
+      displaystat = 1;
     }
   }
-  statuser.addEventListener("click", hideAndShow);
+
+  function hideAndShowSocail() {
+    if (displaylive == 1) {
+      socailBox.style.display = "block";
+      livearrow.classList.remove("fa-angle-left");
+      livearrow.classList.add("fa-angle-down");
+      live.classList.add("satatuseractive");
+      displaylive = 0;
+    } else {
+      socailBox.style.display = "none";
+      livearrow.classList.add("fa-angle-left");
+      livearrow.classList.remove("fa-angle-down");
+      live.classList.remove("satatuseractive");
+      displaylive = 1;
+    }
+  }
+
+  statuser.addEventListener("click", hideAndShowStat);
+  live.addEventListener("click", hideAndShowSocail);
 </script>

@@ -196,8 +196,8 @@ require('../../connect.php');
 
           for (i = 0; i < ele.length; i++) {
             if (ele[i].checked) {
-              console.log(ele[i].value);
-              x = ele[i].value;
+              // console.log(ele[i].value);
+              var x = ele[i].value;
             }
 
             var selectsportTxt = '';
@@ -245,14 +245,14 @@ require('../../connect.php');
               //     <option value="${sport_Male.id}">${sport_Male.sportname}</option>
               //     `;
               // });
-            } 
-
-            selectsportTxt += `<select id="sport">
-                                    <option value="">เลือกกีฬา</option>` +
-              optiontxt +
-              `</select>`
-            document.getElementById('sport').innerHTML = selectsportTxt;
+            }
           }
+
+          selectsportTxt += `<select id="sport">
+                                    <option value="">เลือกกีฬา</option>` +
+            optiontxt +
+            `</select>`
+          document.getElementById('sport').innerHTML = selectsportTxt;
         }
       </script>
 
