@@ -30,6 +30,7 @@ if (!$objResult) {
   $_SESSION["user_id1"] = $objResult["user_id"];
   $_SESSION["status1"] = $objResult["status"];
   $_SESSION["faculty_id1"] = $objResult["faculty_id"];
+  $_SESSION["username1"] = $objResult["username"];
   //session_write_close();
   echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
 }

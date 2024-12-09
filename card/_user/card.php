@@ -61,14 +61,52 @@ session_start();
 
   <div class="content">
     <div class="container">
-      <h2 class="headTxt">ค้นหาบัตรประจำตัวนักกีฬา</h2>
-      <div class="boxinput">
-        <input type="text" placeholder="รหัสนิสิต 13 หลัก">
-        <button class="btnsubmit"><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</button>
-      </div>
+
+      <button>ดาวน์โหลดทั้งหมด</button>
+
+      <?php
+      $strSQL = "SELECT * 
+      FROM account
+      LEFT JOIN faculty 
+      ON account.faculty_id = faculty.id
+      LEFT JOIN sport
+      ON account.sport_id = sport.id
+      WHERE username = '" . trim($_SESSION['username1']) . "'";
+      $objQuery = mysqli_query($connect, $strSQL);
+      ?>
+
+      <?php
+
+      echo "<table border='1'>";
+      echo "<tr>
+      <th>รหัสนิสิต</th>
+      <th>ชื่อ-สกุล</th>
+      <th>คณะ/วิทยาลัย</th>
+      <th>ชั้นปี</th>
+      <th>ประเภทกีฬา</th>
+      <th>บัตรประจำตัวนักกีฬา</th>
+    </tr>";
+
+      // วนลูปแสดงข้อมูล
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        echo "<tr>
+          <td>" . ($row["username"]) . "</td>
+          <td>" . ($row["user_initial"]) . " " . ($row["first_name"]) . " " . ($row["last_name"]) . "</td>
+          <td>" . ($row["full_name"]) . "</td>
+          <td>" . ($row["year"]) . "</td>
+          <td>" . ($row["sport_name"]) . "</td>
+          <!--<td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-magnifying-glass'> ตรวสอบข้อมูล</i></a></td>-->
+        </tr>";
+      }
+
+      echo "</table>";
+
+      ?>
+
     </div>
   </div>
 
+  <?php $connect->close(); ?>
 </body>
 
 </html>
