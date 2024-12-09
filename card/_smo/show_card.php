@@ -33,7 +33,8 @@ require('../../connect.php');
       $objResult = mysqli_fetch_array($objQuery);
       ?>
 
-      <button>ย้อนกลับ</button>
+      <button onclick="window.location.assign('card.php');">ย้อนกลับ</button>
+
       <h1>ประเภท <?php echo $objResult['sport_name']; ?></h1>
       <button>ดาวน์โหลดทั้งหมด</button>
 

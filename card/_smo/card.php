@@ -125,79 +125,169 @@ require('../../connect.php');
         </span>
       </form>
 
+      <?php // กีฬาชาย
+
+      $strSQL = "SELECT * 
+        FROM sport
+        WHERE id < 20 and id >= 10";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Male[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Male = json_encode($dataArray_Male);
+
+      echo "<script>let sport_Male = $jsonData_Male;</script>";
+
+      ?>
+
+      <?php // กีฬาหญิง
+
+      $strSQL = "SELECT * 
+        FROM sport
+        WHERE id < 30 and id >= 20";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Female[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Female = json_encode($dataArray_Female);
+
+      echo "<script>let sport_Female = $jsonData_Female;</script>";
+
+      ?>
+
+      <?php // กีฬาหญิง
+
+      $strSQL = "SELECT * 
+      FROM sport
+      WHERE id < 30 and id >= 20";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Female[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Female = json_encode($dataArray_Female);
+
+      echo "<script>let sport_Female = $jsonData_Female;</script>";
+
+      ?>
+
+      <?php // กีฬาผสม
+
+      $strSQL = "SELECT * 
+      FROM sport
+      WHERE id < 40 and id >= 30";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Overall[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Overall = json_encode($dataArray_Overall);
+
+      echo "<script>let sport_Overall = $jsonData_Overall;</script>";
+
+      ?>
+
+      <?php // คฑากร
+
+      $strSQL = "SELECT * 
+      FROM sport
+      WHERE id < 50 and id >= 40";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Drum_major[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Drum_major = json_encode($dataArray_Drum_major);
+
+      echo "<script>let Drum_major = $jsonData_Drum_major;</script>";
+
+      ?>
+
+      <?php // ลีด
+
+      $strSQL = "SELECT * 
+      FROM sport
+      WHERE id < 60 and id >= 50";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Cheer_leader[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Cheer_leader = json_encode($dataArray_Cheer_leader);
+
+      echo "<script>let Cheer_leader = $jsonData_Cheer_leader;</script>";
+
+      ?>
+
+      <?php // โค้ช
+
+      $strSQL = "SELECT * 
+      FROM sport
+      WHERE id < 90 and id >= 60";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Coach[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Coach = json_encode($dataArray_Coach);
+
+      echo "<script>let Coach = $jsonData_Coach;</script>";
+
+      ?>
+
+      <?php // สโม
+
+      $strSQL = "SELECT * 
+      FROM sport
+      WHERE id >= 90";
+      $objQuery = mysqli_query($connect, $strSQL);
+
+      while ($row = mysqli_fetch_assoc($objQuery)) {
+        $dataArray_Smo[] = [
+          "id" => $row["id"],
+          "sportname" => $row["sport_name"],
+        ];
+      }
+
+      $jsonData_Smo = json_encode($dataArray_Smo);
+
+      echo "<script>let Smo = $jsonData_Smo;</script>";
+
+      ?>
+
       <script>
         function displayRadioValue() {
           var ele = document.getElementsByName('Myradio');
-
-          sport_Male = [{
-            sportname: "บาสเกตบอลชาย",
-            id: 10
-          }, {
-            sportname: "วอลเลย์บอลชาย",
-            id: 11
-          }, {
-            sportname: "ฟุตซอลชาย",
-            id: 12
-          }, {
-            sportname: "แบดมินตัน ประเภทคู่ ชาย",
-            id: 13
-          }, {
-            sportname: "วิ่ง 100 เมตร ชาย",
-            id: 14
-          }, {
-            sportname: "วิ่ง 200 เมตร ชาย",
-            id: 15
-          }, {
-            sportname: "วิ่ง 400 เมตร ชาย",
-            id: 16
-          }];
-          sport_Female = [{
-            sportname: "บาสเกตบอลหญิง",
-            id: 20
-          }, {
-            sportname: "วอลเลย์บอลหญิง",
-            id: 21
-          }, {
-            sportname: "แชร์บอลหญิง",
-            id: 22
-          }, {
-            sportname: "แบดมินตัน ประเภทคู่ หญิง",
-            id: 23
-          }, {
-            sportname: "วิ่ง 100 เมตร หญิง",
-            id: 24
-          }, {
-            sportname: "วิ่ง 200 เมตร หญิง",
-            id: 25
-          }, {
-            sportname: "วิ่ง 400 เมตร หญิง",
-            id: 26
-          }];
-          sport_Overall = [{
-            sportname: "แบดมินตัน ประเภทคู่ ชาย-หญิง",
-            id: 30
-          }, {
-            sportname: "วิ่งผลัดผสม 4x100 เมตร",
-            id: 31
-          }, {
-            sportname: "วิ่งผลัดผสม 4x400 เมตร",
-            id: 32
-          }, {
-            sportname: "E-SPORT Valoarant ประเภททีม",
-            id: 33
-          }, {
-            sportname: "E-SPORT ROV ประเภททีม",
-            id: 34
-          }, {
-            sportname: "A Alt+0150 MATH ประเภทคู่ผสม",
-            id: 35
-          }, {
-            sportname: "CROSSWORD ประเภทคู่ผสม",
-            id: 36
-          }, {
-            sportname: "หมากฮอสไทย ประเภทคู่ผสม",
-            id: 37
-          }];
 
           for (i = 0; i < ele.length; i++) {
             if (ele[i].checked) {
@@ -227,29 +317,29 @@ require('../../connect.php');
                   `;
               });
             } else if (x == "Smo") {
-              // sport_Male.forEach(sport_Male => {
-              //   optiontxt += `
-              //     <option value="${sport_Male.id}">${sport_Male.sportname}</option>
-              //     `;
-              // });
+              Smo.forEach(sport => {
+                optiontxt += `
+                  <option value="${sport.id}">${sport.sportname}</option>
+                  `;
+              });
             } else if (x == "Coach") {
-              // sport_Male.forEach(sport_Male => {
-              //   optiontxt += `
-              //     <option value="${sport_Male.id}">${sport_Male.sportname}</option>
-              //     `;
-              // });
+              Coach.forEach(sport => {
+                optiontxt += `
+                  <option value="${sport.id}">${sport.sportname}</option>
+                  `;
+              });
             } else if (x == "Drum_major") {
-              // sport_Male.forEach(sport_Male => {
-              //   optiontxt += `
-              //     <option value="${sport_Male.id}">${sport_Male.sportname}</option>
-              //     `;
-              // });
+              Drum_major.forEach(sport => {
+                optiontxt += `
+                  <option value="${sport.id}">${sport.sportname}</option>
+                  `;
+              });
             } else if (x == "Cheer_leader") {
-              // sport_Male.forEach(sport_Male => {
-              //   optiontxt += `
-              //     <option value="${sport_Male.id}">${sport_Male.sportname}</option>
-              //     `;
-              // });
+              Cheer_leader.forEach(sport => {
+                optiontxt += `
+                  <option value="${sport.id}">${sport.sportname}</option>
+                  `;
+              });
             }
           }
 
