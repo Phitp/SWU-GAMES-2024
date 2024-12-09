@@ -29,6 +29,7 @@ if (!$objResult) {
 } else {
   $_SESSION["user_id1"] = $objResult["user_id"];
   $_SESSION["status1"] = $objResult["status"];
+  $_SESSION["faculty_id1"] = $objResult["faculty_id"];
   //session_write_close();
   echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
 }

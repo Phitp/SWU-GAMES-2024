@@ -114,58 +114,63 @@ require('../../connect.php');
         <input type="radio" name="Myradio" value="Cheer_leader" onclick="displayRadioValue()">ผู้นำเชียร์
       </form>
 
-      <div id="sport">
-        <select>
-          <option value="">กรุณาเลือกประเภทกีฬาก่อน</option>
-        </select>
-      </div>
+      <form action="serch_card.php" method="post">
+        <div id="sport">
+          <select name="select_sport">
+            <option value="">กรุณาเลือกประเภทกีฬาก่อน</option>
+          </select>
+        </div>
+        <span>
+          <button class="btnsubmit" type="submit"><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</button>
+        </span>
+      </form>
 
       <script>
         function displayRadioValue() {
           var ele = document.getElementsByName('Myradio');
 
           sport_Male = [{
-            sportname: "บาสเกตบอล",
+            sportname: "บาสเกตบอลชาย",
             id: 10
           }, {
-            sportname: "วอลเลย์บอล",
+            sportname: "วอลเลย์บอลชาย",
             id: 11
           }, {
-            sportname: "ฟุตซอล",
+            sportname: "ฟุตซอลชาย",
             id: 12
           }, {
             sportname: "แบดมินตัน ประเภทคู่ ชาย",
             id: 13
           }, {
-            sportname: "วิ่ง 100 เมตร",
+            sportname: "วิ่ง 100 เมตร ชาย",
             id: 14
           }, {
-            sportname: "วิ่ง 200 เมตร",
+            sportname: "วิ่ง 200 เมตร ชาย",
             id: 15
           }, {
-            sportname: "วิ่ง 400 เมตร",
+            sportname: "วิ่ง 400 เมตร ชาย",
             id: 16
           }];
           sport_Female = [{
-            sportname: "บาสเกตบอล",
+            sportname: "บาสเกตบอลหญิง",
             id: 20
           }, {
-            sportname: "วอลเลย์บอล",
+            sportname: "วอลเลย์บอลหญิง",
             id: 21
           }, {
-            sportname: "แชร์บอล",
+            sportname: "แชร์บอลหญิง",
             id: 22
           }, {
             sportname: "แบดมินตัน ประเภทคู่ หญิง",
             id: 23
           }, {
-            sportname: "วิ่ง 100 เมตร",
+            sportname: "วิ่ง 100 เมตร หญิง",
             id: 24
           }, {
-            sportname: "วิ่ง 200 เมตร",
+            sportname: "วิ่ง 200 เมตร หญิง",
             id: 25
           }, {
-            sportname: "วิ่ง 400 เมตร",
+            sportname: "วิ่ง 400 เมตร หญิง",
             id: 26
           }];
           sport_Overall = [{
@@ -248,7 +253,7 @@ require('../../connect.php');
             }
           }
 
-          selectsportTxt += `<select id="sport">
+          selectsportTxt += `<select name="select_sport">
                                     <option value="">เลือกกีฬา</option>` +
             optiontxt +
             `</select>`
@@ -265,9 +270,6 @@ require('../../connect.php');
       // echo mysqli_num_rows($sportQuery);
       ?>
 
-      <span>
-        <button class="btnsubmit"><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</button>
-      </span>
     </div>
   </div>
 
