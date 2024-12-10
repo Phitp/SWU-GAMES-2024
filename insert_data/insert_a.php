@@ -49,15 +49,16 @@
 <div id="modalOverlay" class="modal-overlay">
   <div class="modal">
     <div class="modal_form">
-      <form action="" method="post">
+
+      <form action="../insert_data/insert_po.php" method="post">
         <label for="username_in">username</label>
-        <input type="text" name="username_in">
+        <input type="text" name="username_in" required>
 
         <label for="password_in">password</label>
         <input type="text" name="password_in">
 
         <label for="status_in">สถานะ</label>
-        <select name="status_in">
+        <select name="status_in" required>
           <option value="">--- เลือก ---</option>
           <option value="Soswu">องค์กรนิสิต</option>
           <option value="Committee">กรรมการ</option>
@@ -66,7 +67,7 @@
         </select>
 
         <label for="initial_in">คำนำหน้า</label>
-        <select name="initial_in">
+        <select name="initial_in" required>
           <option value="">-- เลือก --</option>
           <option value="นาย">นาย</option>
           <option value="นาง">นาง</option>
@@ -74,10 +75,10 @@
         </select>
 
         <label for="first_in">ชื่อ</label>
-        <input type="text" name="first_in">
+        <input type="text" name="first_in" required>
 
         <label for="last_in">นามสกุล</label>
-        <input type="text" name="last_in">
+        <input type="text" name="last_in" required>
 
         <div id="box-fac"></div>
 
