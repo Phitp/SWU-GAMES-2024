@@ -66,7 +66,7 @@ require('../../connect.php');
                 <td>" . ($row["user_initial"]) . " " . ($row["first_name"]) . " " . ($row["last_name"]) . "</td>
                 <td>" . ($row["full_name"]) . "</td>
                 <td>" . ($row["year"]) . "</td>
-                <!--<td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-magnifying-glass'> ตรวสอบข้อมูล</i></a></td>-->
+                <td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-magnifying-glass'> ตรวสอบข้อมูล</i></a></td>
               </tr>";
         }
 

@@ -23,7 +23,9 @@ require('../connect.php');
 
   <div class="content">
     <div class="container">
-      <button>เพิ่มข้อมูลนักกีฬา</button>
+
+      <?php include('../insert_data/insert_a.php') ?>
+
       <form>
         <input type="text" placeholder="search">
         <button>ค้นหา</button>
@@ -37,9 +39,8 @@ require('../connect.php');
       ON account.faculty_id = faculty.id
       LEFT JOIN sport
       ON account.sport_id = sport.id
-      WHERE status = 'User'
-        or sport_id < 90
-      ORDER BY account.username ASC";
+      WHERE status != 'Admin'
+      ORDER BY account.time DESC ";
       $objQuery = mysqli_query($connect, $strSQL);
       ?>
 
@@ -51,6 +52,7 @@ require('../connect.php');
             <th>ชื่อ-สกุล</th>
             <th>คณะ/วิทยาลัย</th>
             <th>ชั้นปี</th>
+            <th>สถานะ</th>
             <th>ประเภทกีฬา</th>
             <th>แก้ไขข้อมูล</th>
           </tr>";
@@ -62,6 +64,7 @@ require('../connect.php');
                 <td>" . ($row["user_initial"]) . " " . ($row["first_name"]) . " " . ($row["last_name"]) . "</td>
                 <td>" . ($row["full_name"]) . "</td>
                 <td>" . ($row["year"]) . "</td>
+                <td>" . ($row["status"]) . "</td>
                 <td>" . ($row["sport_name"]) . "</td>
                 <td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-user-pen'></i> แก้ไขข้อมูล</i></a></td>
               </tr>";

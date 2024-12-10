@@ -95,7 +95,7 @@ session_start();
           <td>" . ($row["full_name"]) . "</td>
           <td>" . ($row["year"]) . "</td>
           <td>" . ($row["sport_name"]) . "</td>
-          <!--<td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-magnifying-glass'> ตรวสอบข้อมูล</i></a></td>-->
+          <td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-magnifying-glass'> ตรวสอบข้อมูล</i></a></td>
         </tr>";
       }
 
