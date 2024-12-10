@@ -15,5 +15,8 @@ elseif ($_SESSION['status1'] == 'User') {
 }
 elseif ($_SESSION['status1'] == 'Admin') {
   // echo "<meta http-equiv='refresh' content='0;_user/card.php'>";
+} 
+elseif ($_SESSION['status1'] == 'Soswu') {
+  echo "<meta http-equiv='refresh' content='0;../soswu/add_data.php'>";
 }
 ?> 
