@@ -43,7 +43,7 @@
   }
 </style>
 
-<button id="openModal">เพิ่มข้อมูล</button>
+<button id="openModal">เพิ่มข้อมูลนักกีฬา</button>
 
 <!-- โครงสร้าง Modal -->
 <div id="modalOverlay" class="modal-overlay">
@@ -55,14 +55,10 @@
         <input type="text" name="username_in" required>
 
         <label for="password_in">password</label>
-        <input type="text" name="password_in" placeholder="ถ้าเป็นนิสิตไม่ต้องกรอก">
+        <input type="text" name="password_in" readonly placeholder="ไม่ต้องกรอก">
 
         <label for="status_in">สถานะ</label>
-        <select name="status_in" required>
-          <option value="">--- เลือก ---</option>
-          <option value="Soswu">องค์กรนิสิต</option>
-          <option value="Committee">กรรมการ</option>
-          <option value="Smo">สโมสรนิสิต</option>
+        <select name="status_in">
           <option value="User">นิสิต</option>
         </select>
 

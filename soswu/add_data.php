@@ -23,7 +23,8 @@ require('../connect.php');
 
   <div class="content">
     <div class="container">
-      <button>เพิ่มข้อมูลนักกีฬา</button>
+
+      <?php include('../insert_data/insert_s.php') ?>
       <form>
         <input type="text" placeholder="search">
         <button>ค้นหา</button>
