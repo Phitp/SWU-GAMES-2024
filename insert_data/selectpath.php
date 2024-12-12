@@ -8,3 +8,5 @@ if ($_SESSION['status1'] == 'Admin') {
 } else {
   echo "<meta http-equiv='refresh' content='0;url=http://127.0.0.1/SWU-GAMES-2024/index.php'>";
 }
+
+?>

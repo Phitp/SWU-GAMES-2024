@@ -66,13 +66,48 @@ require('../connect.php');
                 <td>" . ($row["year"]) . "</td>
                 <td>" . ($row["status"]) . "</td>
                 <td>" . ($row["sport_name"]) . "</td>
-                <td><a href='edit_a.php? ". ($row["username"]) ." ". ($row["id"])." '>แก้ไขข้อมูล</td>
+                <td><button onclick='openModal({$row['id']})'>แก้ไขข้อมูล</button></td>
               </tr>";
       }
 
       echo "</table>";
+?>
 
-      ?>
+<?php foreach ($row as $person): ?>
+  <div id="modal<?php echo $person['id']; ?>" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal(<?php echo $person['id']; ?>)">&times;</span>
+          <h2>รายละเอียดของ <?php echo $person['name']; ?></h2>
+          <p>ชื่อ: <?php echo $person['name']; ?></p>
+          <p>อายุ: <?php echo $person['age']; ?></p>
+          <p>รายละเอียดเพิ่มเติม...</p>
+      </div>
+  </div>
+  <?php endforeach; ?>
+
+  <script>
+      // Function to open the modal
+      function openModal(id) {
+          var modal = document.getElementById('modal' + id);
+          modal.style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal(id) {
+          var modal = document.getElementById('modal' + id);
+          modal.style.display = "none";
+      }
+
+      // Close the modal if the user clicks outside of it
+      window.onclick = function(event) {
+          var modals = document.querySelectorAll('.modal');
+          modals.forEach(function(modal) {
+              if (event.target === modal) {
+                  modal.style.display = "none";
+              }
+          });
+      }
+  </script>
 
     </div>
   </div>
