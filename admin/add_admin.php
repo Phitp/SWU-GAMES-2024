@@ -19,12 +19,12 @@ require('../connect.php');
   <?php include("../sidebar_m.php");
   include("../navbar_m.php"); ?>
 
-  <?php include("../content.php") ?>
+  <?php include("../content.php");?>
 
   <div class="content">
     <div class="container">
 
-      <?php include('../insert_data/insert_a.php') ?>
+      <?php include('../insert_data/insert_a.php');?>
 
       <form>
         <input type="text" placeholder="search">
@@ -66,7 +66,7 @@ require('../connect.php');
                 <td>" . ($row["year"]) . "</td>
                 <td>" . ($row["status"]) . "</td>
                 <td>" . ($row["sport_name"]) . "</td>
-                <td><a href='card.php?id=" . ($row["user_id"]) . "' target='_blank'><i class='fa-solid fa-user-pen'></i> แก้ไขข้อมูล</i></a></td>
+                <td><a href='edit_a.php? ". ($row["username"]) ." ". ($row["id"])." '>แก้ไขข้อมูล</td>
               </tr>";
       }
 

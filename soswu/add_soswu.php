@@ -19,12 +19,12 @@ require('../connect.php');
   <?php include("../sidebar_m.php");
   include("../navbar_m.php"); ?>
 
-  <?php include("../content.php") ?>
+  <?php include("../content.php"); ?>
 
   <div class="content">
     <div class="container">
 
-      <?php include('../insert_data/insert_s.php') ?>
+      <?php include('../insert_data/insert_s.php'); ?>
       <form>
         <input type="text" placeholder="search">
         <button>ค้นหา</button>
